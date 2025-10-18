@@ -192,61 +192,65 @@ export default function Destinations() {
             {destinations.map((destination, index) => (
               <div
                 key={index}
-                className={`flex flex-col ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } gap-8 items-center`}
+                className="bg-white rounded-2xl shadow-xl border-2 border-safari-green p-8 md:p-10"
               >
-                <div className="md:w-1/2">
-                  <div className="card overflow-hidden">
-                    <img
-                      src={destination.image}
-                      alt={destination.name}
-                      className="w-full h-96 object-cover hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </div>
-
-                <div className="md:w-1/2 space-y-4">
-                  <div>
-                    <h2 className="text-4xl font-bold text-safari-green mb-2">
-                      {destination.name}
-                    </h2>
-                    <p className="text-xl text-safari-gold italic">{destination.tagline}</p>
-                  </div>
-
-                  <p className="text-gray-700 text-lg leading-relaxed">
-                    {destination.description}
-                  </p>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-safari-green mb-3">Highlights</h3>
-                    <div className="grid grid-cols-2 gap-2">
-                      {destination.highlights.map((highlight, i) => (
-                        <div key={i} className="flex items-start">
-                          <span className="text-safari-gold mr-2">✓</span>
-                          <span className="text-gray-700">{highlight}</span>
-                        </div>
-                      ))}
+                <div
+                  className={`flex flex-col ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } gap-8 items-center`}
+                >
+                  <div className="md:w-1/2">
+                    <div className="overflow-hidden rounded-xl">
+                      <img
+                        src={destination.image}
+                        alt={destination.name}
+                        className="w-full h-96 object-cover hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-4 pt-2">
+                  <div className="md:w-1/2 space-y-4">
                     <div>
-                      <p className="text-sm font-semibold text-gray-600">Best Time to Visit</p>
-                      <p className="text-gray-800">{destination.bestTime}</p>
+                      <h2 className="text-4xl font-bold text-safari-green mb-2">
+                        {destination.name}
+                      </h2>
+                      <p className="text-xl text-safari-gold italic">{destination.tagline}</p>
                     </div>
-                    <div>
-                      <p className="text-sm font-semibold text-gray-600">Recommended Duration</p>
-                      <p className="text-gray-800">{destination.duration}</p>
-                    </div>
-                  </div>
 
-                  <Link
-                    to={`/destinations/${getDestinationUrl(destination.name)}`}
-                    className="btn-primary mt-4 inline-block"
-                  >
-                    Plan Your Visit
-                  </Link>
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      {destination.description}
+                    </p>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-safari-green mb-3">Highlights</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {destination.highlights.map((highlight, i) => (
+                          <div key={i} className="flex items-start">
+                            <span className="text-safari-gold mr-2">✓</span>
+                            <span className="text-gray-700">{highlight}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-4 pt-2">
+                      <div>
+                        <p className="text-sm font-semibold text-gray-600">Best Time to Visit</p>
+                        <p className="text-gray-800">{destination.bestTime}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-600">Recommended Duration</p>
+                        <p className="text-gray-800">{destination.duration}</p>
+                      </div>
+                    </div>
+
+                    <Link
+                      to={`/destinations/${getDestinationUrl(destination.name)}`}
+                      className="btn-primary mt-4 inline-block"
+                    >
+                      Plan Your Visit
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
