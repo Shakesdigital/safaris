@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'safari-green': '#2d5016',
+        'safari-green': '#24684f',
         'safari-gold': '#d4af37',
-        'safari-brown': '#8b4513',
+        'safari-brown': '#24684f',
       },
       fontFamily: {
         'heading': ['Georgia', 'serif'],
