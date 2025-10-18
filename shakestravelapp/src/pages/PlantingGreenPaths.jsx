@@ -73,26 +73,6 @@ export default function PlantingGreenPaths() {
     }
   ]
 
-  const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      role: 'Eco-Tourist from UK',
-      text: 'Planting Green Paths made my Uganda safari truly meaningful. Knowing that my trip contributed to reforestation and community development added so much value to the experience.',
-      rating: 5
-    },
-    {
-      name: 'David Kamau',
-      role: 'Local Guide, Bwindi',
-      text: 'This program has transformed our community. We\'ve planted over 5,000 trees and created sustainable income opportunities through eco-tourism partnerships.',
-      rating: 5
-    },
-    {
-      name: 'Emma Martinez',
-      role: 'Conservation Volunteer',
-      text: 'I donated trees and joined a community planting day. Seeing the direct impact of conservation efforts while enjoying Uganda\'s beauty was incredible.',
-      rating: 5
-    }
-  ]
 
   return (
     <div>
@@ -286,29 +266,6 @@ export default function PlantingGreenPaths() {
                 >
                   {option.title}
                 </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-12">Voices from the Field</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="card p-6">
-                <div className="flex mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-safari-gold text-xl">★</span>
-                  ))}
-                </div>
-                <p className="text-gray-700 italic mb-4">"{testimonial.text}"</p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-safari-green">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                </div>
               </div>
             ))}
           </div>
