@@ -66,7 +66,7 @@ export default function Navigation() {
 
           <div className="hidden md:block">
             <a href="#book" className="btn-primary">
-              Book Now
+              Let's plan your trip
             </a>
           </div>
 
@@ -119,7 +119,7 @@ export default function Navigation() {
               </Link>
             ))}
             <a href="#book" className="block mt-3">
-              <button className="btn-primary w-full">Book Now</button>
+              <button className="btn-primary w-full">Let's plan your trip</button>
             </a>
           </div>
         )}
