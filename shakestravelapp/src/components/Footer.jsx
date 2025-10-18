@@ -7,6 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-6">
           <div>
             <h3 className="text-xl font-bold mb-3">About Us</h3>
+            <img src="/logo.png" alt="Shakes Travel Logo" className="h-16 w-auto mb-3" />
             <p className="text-gray-300">Inspiring and crafting unforgettable safari experiences across Uganda</p>
           </div>
           <div>
@@ -19,9 +20,8 @@ export default function Footer() {
             <p className="text-gray-300">Kampala, Uganda</p>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-8 border-t border-gray-600 pt-4">
-          <p className="text-sm text-gray-300">&copy; {new Date().getFullYear()} All rights reserved.</p>
-          <img src="/logo.png" alt="Shakes Travel Logo" className="h-16 w-auto" />
+        <div className="border-t border-gray-600 pt-4">
+          <p className="text-sm text-gray-300 text-center">&copy; {new Date().getFullYear()} All rights reserved.</p>
         </div>
       </div>
     </footer>
