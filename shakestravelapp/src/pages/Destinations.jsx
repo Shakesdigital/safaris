@@ -1,0 +1,223 @@
+import { useState } from 'react'
+import BookingModal from '../components/BookingModal'
+
+export default function Destinations() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedDestination, setSelectedDestination] = useState('')
+
+  const handleBooking = (destination) => {
+    setSelectedDestination(destination)
+    setIsModalOpen(true)
+  }
+
+  const destinations = [
+    {
+      name: 'Bwindi Impenetrable National Park',
+      tagline: 'Home of the Mountain Gorillas',
+      description: 'Bwindi Impenetrable National Park is a UNESCO World Heritage Site and one of the most biologically diverse areas on Earth. It is home to approximately half of the world\'s remaining mountain gorilla population.',
+      image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
+      highlights: [
+        'Mountain Gorilla Trekking',
+        'Over 350 bird species',
+        'Ancient rainforest ecosystem',
+        'Batwa cultural experiences'
+      ],
+      bestTime: 'June to September, December to February',
+      duration: '2-3 days'
+    },
+    {
+      name: 'Queen Elizabeth National Park',
+      tagline: 'Medley of Wonders',
+      description: 'Uganda\'s most popular tourist destination, Queen Elizabeth National Park boasts diverse ecosystems from savanna to wetlands, and is famous for its tree-climbing lions and boat cruise on the Kazinga Channel.',
+      image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
+      highlights: [
+        'Tree-climbing lions in Ishasha',
+        'Kazinga Channel boat safari',
+        'Over 95 mammal species',
+        'Spectacular Crater Lakes'
+      ],
+      bestTime: 'June to September, December to February',
+      duration: '2-4 days'
+    },
+    {
+      name: 'Murchison Falls National Park',
+      tagline: 'Where Nature Performs',
+      description: 'Uganda\'s largest national park features the dramatic Murchison Falls, where the Nile River explodes through a narrow gorge. The park offers exceptional wildlife viewing and stunning landscapes.',
+      image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=800',
+      highlights: [
+        'Murchison Falls boat trip',
+        'Big Four wildlife viewing',
+        'Nile River safaris',
+        'Over 450 bird species'
+      ],
+      bestTime: 'December to February, June to September',
+      duration: '2-3 days'
+    },
+    {
+      name: 'Kibale National Park',
+      tagline: 'Primate Capital of the World',
+      description: 'Kibale National Park is renowned for having the highest concentration of primates in East Africa. The park is home to 13 primate species including over 1,500 chimpanzees.',
+      image: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800',
+      highlights: [
+        'Chimpanzee trekking',
+        '13 primate species',
+        'Bigodi Wetland Sanctuary',
+        'Nature walks and birding'
+      ],
+      bestTime: 'February to June, September to November',
+      duration: '1-2 days'
+    },
+    {
+      name: 'Lake Mburo National Park',
+      tagline: 'Whispers of the Wild',
+      description: 'The smallest of Uganda\'s savanna national parks, Lake Mburo offers an intimate safari experience with diverse wildlife, beautiful landscapes, and opportunities for walking safaris.',
+      image: 'https://images.unsplash.com/photo-1535338623859-38b734369d9d?w=800',
+      highlights: [
+        'Walking safaris',
+        'Horse riding safaris',
+        'Boat trips on the lake',
+        'Zebras and impalas'
+      ],
+      bestTime: 'June to September, December to February',
+      duration: '1-2 days'
+    },
+    {
+      name: 'Kidepo Valley National Park',
+      tagline: 'Africa\'s True Wilderness',
+      description: 'Remote and rugged, Kidepo Valley National Park is Uganda\'s most isolated park. It offers a true wilderness experience with dramatic scenery and rare wildlife species found nowhere else in Uganda.',
+      image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800',
+      highlights: [
+        'Remote wilderness experience',
+        'Unique wildlife species',
+        'Karamojong cultural encounters',
+        'Stunning mountain scenery'
+      ],
+      bestTime: 'September to March',
+      duration: '2-3 days'
+    }
+  ]
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section
+        className="relative h-96 bg-cover bg-center flex items-center"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600)',
+        }}
+      >
+        <div className="container mx-auto px-4 text-center text-white">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 font-heading">
+            Uganda Safari Destinations
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            Explore the Pearl of Africa's most spectacular national parks and wildlife reserves
+          </p>
+        </div>
+      </section>
+
+      {/* Introduction */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Uganda is blessed with an incredible diversity of landscapes and wildlife. From mist-shrouded mountains
+            where mountain gorillas roam, to vast savanna plains teeming with elephants and lions, each destination
+            offers a unique window into Africa's natural wonders. Let Shakes Travel guide you through these
+            extraordinary ecosystems.
+          </p>
+        </div>
+      </section>
+
+      {/* Destinations Grid */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="space-y-16">
+            {destinations.map((destination, index) => (
+              <div
+                key={index}
+                className={`flex flex-col ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                } gap-8 items-center`}
+              >
+                <div className="md:w-1/2">
+                  <div className="card overflow-hidden">
+                    <img
+                      src={destination.image}
+                      alt={destination.name}
+                      className="w-full h-96 object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+
+                <div className="md:w-1/2 space-y-4">
+                  <div>
+                    <h2 className="text-4xl font-bold text-safari-green mb-2">
+                      {destination.name}
+                    </h2>
+                    <p className="text-xl text-safari-gold italic">{destination.tagline}</p>
+                  </div>
+
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    {destination.description}
+                  </p>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-safari-green mb-3">Highlights</h3>
+                    <div className="grid grid-cols-2 gap-2">
+                      {destination.highlights.map((highlight, i) => (
+                        <div key={i} className="flex items-start">
+                          <span className="text-safari-gold mr-2">✓</span>
+                          <span className="text-gray-700">{highlight}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4 pt-2">
+                    <div>
+                      <p className="text-sm font-semibold text-gray-600">Best Time to Visit</p>
+                      <p className="text-gray-800">{destination.bestTime}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-600">Recommended Duration</p>
+                      <p className="text-gray-800">{destination.duration}</p>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => handleBooking(destination.name)}
+                    className="btn-primary mt-4"
+                  >
+                    Plan Your Visit
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-safari-green text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Create Your Custom Safari Itinerary
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Combine multiple destinations for the ultimate Uganda adventure. Our experts will help you
+            design the perfect itinerary based on your interests and schedule.
+          </p>
+          <button onClick={() => handleBooking('Custom Itinerary')} className="btn-primary text-lg">
+            Get Started
+          </button>
+        </div>
+      </section>
+
+      <BookingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        experience={selectedDestination}
+      />
+    </div>
+  )
+}
