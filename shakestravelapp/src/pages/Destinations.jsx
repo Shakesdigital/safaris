@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 
 export default function Destinations() {
@@ -8,6 +9,21 @@ export default function Destinations() {
   const handleBooking = (destination) => {
     setSelectedDestination(destination)
     setIsModalOpen(true)
+  }
+
+  const getDestinationUrl = (destinationName) => {
+    const urlMap = {
+      'Bwindi Impenetrable National Park': 'bwindi-impenetrable',
+      'Kibale National Park': 'kibale-national-park',
+      'Queen Elizabeth National Park': 'queen-elizabeth',
+      'Murchison Falls National Park': 'murchison-falls',
+      'Kidepo Valley National Park': 'kidepo-valley',
+      'Lake Mburo National Park': 'lake-mburo',
+      'Mount Elgon National Park': 'mount-elgon',
+      'Rwenzori Mountains National Park': 'rwenzori-mountains',
+      'Semuliki Valley National Park': 'semuliki-valley'
+    }
+    return urlMap[destinationName] || destinationName.toLowerCase().replace(/\s+/g, '-')
   }
 
   const destinations = [
@@ -183,12 +199,12 @@ export default function Destinations() {
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => handleBooking(destination.name)}
-                    className="btn-primary mt-4"
+                  <Link
+                    to={`/destinations/${getDestinationUrl(destination.name)}`}
+                    className="btn-primary mt-4 inline-block"
                   >
                     Plan Your Visit
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
