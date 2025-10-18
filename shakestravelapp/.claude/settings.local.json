@@ -5,7 +5,14 @@
       "Bash(git log:*)",
       "Bash(git add:*)",
       "Bash(git remote set-url:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npm run dev:*)",
+      "Read(//d/SHAKES TRAVEL/**)",
+      "Bash(git rm:*)",
+      "Read(//c/My Web Sites/shakes travel website mirror/shakestravel.com/experiences/**)"
     ],
     "deny": [],
     "ask": []

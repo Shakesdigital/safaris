@@ -12,106 +12,165 @@ export default function SafariExperiences() {
 
   const experiences = [
     {
-      title: 'Gorilla Trekking',
-      icon: '🦍',
-      tagline: 'The Ultimate Wildlife Encounter',
-      description: 'This isn\'t just tracking animals - it\'s meeting family. You\'ll hike through misty forests with our expert guides, then sit quietly as a gorilla family goes about their day just meters away. It\'s humbling, thrilling, and changes how you see the world.',
-      image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
-      includes: [
-        'Expert gorilla tracking guides',
-        'Park entrance fees',
-        'Gorilla permit (subject to availability)',
-        'Pre-trek briefing',
-        'Certificate of participation'
-      ],
-      duration: '1-6 hours trekking',
-      difficulty: 'Moderate to Challenging',
-      price: 'From $700 per person'
-    },
-    {
-      title: 'Big Game Safari',
+      title: 'Queen Elizabeth National Park Safari',
       icon: '🦁',
-      tagline: 'Classic African Safari',
-      description: 'Experience the thrill of spotting lions, elephants, leopards, and buffaloes in their natural savanna habitat. Our expert guides will take you through Uganda\'s premier wildlife parks.',
+      tagline: 'Tree-Climbing Lions & Kazinga Channel',
+      description: 'Discover Uganda\'s most popular safari destination where tree-climbing lions lounge in the Ishasha sector, and the Kazinga Channel teems with hippos, elephants, and over 600 bird species. This 3-day adventure combines classic game drives with unforgettable boat safaris through one of Africa\'s most biodiverse ecosystems.',
       image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
       includes: [
-        '4x4 safari vehicle with pop-up roof',
-        'Professional wildlife guide',
-        'Game drives (morning & evening)',
-        'Binoculars and field guides',
-        'Drinking water during drives'
+        'Tree-climbing lion tracking in Ishasha sector',
+        'Kazinga Channel boat cruise with abundant wildlife',
+        'Chimpanzee tracking in Kyambura Gorge',
+        'Game drives through diverse landscapes',
+        'Over 600 bird species including African skimmer',
+        'Crater lakes exploration',
+        'Professional safari guide and 4x4 vehicle',
+        'Park entrance fees and accommodation'
       ],
-      duration: '2-7 days',
+      duration: '3 Days',
       difficulty: 'Easy',
-      price: 'From $300 per day'
+      price: '$450 per person',
+      rating: '4.8',
+      reviews: 189,
+      category: 'Wildlife Safari'
     },
     {
-      title: 'Chimpanzee Tracking',
+      title: 'Murchison Falls National Park Safari',
+      icon: '💦',
+      tagline: 'The Mighty Nile\'s Explosive Power',
+      description: 'Witness the world\'s longest river explode through a 7-meter gorge in one of nature\'s most dramatic displays. This 3-day safari combines the thundering spectacle of Murchison Falls with exceptional wildlife viewing including lions, elephants, giraffes, and over 450 bird species along the Nile\'s banks.',
+      image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=800',
+      includes: [
+        'Boat trip to the base of Murchison Falls',
+        'Game drives with lions, elephants, and giraffes',
+        'Top of the Falls viewing experience',
+        'Nile River wildlife viewing with hippos and crocodiles',
+        'Over 450 bird species including the rare shoebill',
+        'Visit to Ziwa Rhino Sanctuary (optional)',
+        'Professional guide and safari vehicle',
+        'All park fees and accommodation'
+      ],
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: '$650 per person',
+      rating: '4.8',
+      reviews: 287,
+      category: 'Wildlife Safari'
+    },
+    {
+      title: 'Kidepo Valley National Park Safari',
+      icon: '🦒',
+      tagline: 'Uganda\'s Remote Wilderness Paradise',
+      description: 'Venture into Uganda\'s most remote and spectacular wilderness where vast golden savannahs stretch to distant mountain ranges. Kidepo offers unique wildlife found nowhere else in Uganda including cheetahs, ostriches, and greater kudus, combined with authentic cultural encounters with the Karamojong people.',
+      image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800',
+      includes: [
+        'Exclusive wildlife including cheetahs and ostriches',
+        'Greater kudus and other rare species',
+        'Vast savannah landscapes with dramatic mountain backdrops',
+        'Cultural visits to Karamojong communities',
+        'Narus Valley game drives',
+        'Kidepo Valley exploration',
+        'Remote wilderness camping experience',
+        'Expert guides and all park fees'
+      ],
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: 'Contact for pricing',
+      rating: '4.8',
+      reviews: 105,
+      category: 'Wildlife Safari'
+    },
+    {
+      title: 'Lake Mburo National Park Safari',
+      icon: '🦓',
+      tagline: 'Walking Safaris & Unique Wildlife',
+      description: 'Experience Uganda\'s only park where you can enjoy walking safaris, horseback riding, and boat cruises all in one destination. Home to Uganda\'s only populations of zebras and impalas, Lake Mburo offers intimate wildlife encounters in a compact, accessible setting perfect for those with limited time.',
+      image: 'https://images.unsplash.com/photo-1535338623859-38b734369d9d?w=800',
+      includes: [
+        'Guided walking safaris through wildlife areas',
+        'Boat cruise on Lake Mburo',
+        'Horseback safari options',
+        'Uganda\'s only zebra and impala populations',
+        'Leopard tracking opportunities',
+        'Night game drives',
+        'Bird watching with over 350 species',
+        'All meals, accommodation, and park fees'
+      ],
+      duration: '3 Days',
+      difficulty: 'Easy',
+      price: '$350 per person',
+      rating: '4.6',
+      reviews: 156,
+      category: 'Wildlife Safari'
+    },
+    {
+      title: 'Rwenzori Mountains Trek to Margherita Peak',
+      icon: '⛰️',
+      tagline: 'Africa\'s Mystical Mountains of the Moon',
+      description: 'Conquer Africa\'s third-highest peak at 5,109 meters on this challenging 7-9 day trek through otherworldly landscapes. Journey through bamboo forests, heath moorlands, and Afro-alpine zones to reach glacial valleys and snow-capped peaks in this UNESCO World Heritage Site known as the "Mountains of the Moon."',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      includes: [
+        'Summit attempt of Margherita Peak (5,109m)',
+        'Professional mountain guides and porters',
+        'Traverse through 5 distinct vegetation zones',
+        'Glacial valley exploration',
+        'UNESCO World Heritage Site experience',
+        'Mountain hut accommodation',
+        'All meals and climbing equipment',
+        'Park fees and permits'
+      ],
+      duration: '7-9 Days',
+      difficulty: 'Challenging',
+      price: 'Contact for pricing',
+      rating: '4.9',
+      reviews: 67,
+      category: 'Adventure & Hiking'
+    },
+    {
+      title: 'Gorilla Trekking in Bwindi Impenetrable National Park',
+      icon: '🦍',
+      tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
+      description: 'Experience the magic of encountering mountain gorillas in their natural habitat within Bwindi Impenetrable National Park, a UNESCO World Heritage Site that has remained largely unchanged for over 25,000 years. Home to nearly half the world\'s remaining mountain gorilla population, this extraordinary journey combines thrilling gorilla tracking with profound wildlife encounters, creating an unforgettable connection with our closest living relatives.',
+      image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
+      includes: [
+        'Mountain gorilla family encounters in natural rainforest habitat',
+        'Trek through 25,000-year-old ancient Bwindi forest ecosystem',
+        'Observe 23 Albertine Rift endemic bird species',
+        'Batwa cultural experience with forest\'s original inhabitants',
+        'Hike to spectacular 33-meter Munyaga Waterfall',
+        'Direct contribution to mountain gorilla conservation',
+        'Expert guides and gorilla tracking permits',
+        'All park fees and accommodation'
+      ],
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: '$750 per person',
+      rating: '4.9',
+      reviews: 234,
+      category: 'Wildlife Safari'
+    },
+    {
+      title: 'Chimpanzee Tracking in Kibale National Park',
       icon: '🐵',
-      tagline: 'Primate Adventure',
-      description: 'Trek through lush forests to find habituated chimpanzee communities. Watch these intelligent primates as they feed, play, and interact in their forest home.',
+      tagline: 'Primate Capital of the World',
+      description: 'Venture into the lush expanse of Kibale National Park, Uganda\'s premier destination for primate encounters and home to over 1,500 chimpanzees. This 795 square kilometer protected area contains East Africa\'s largest remaining tropical rainforest, supporting 13 primate species including habituated chimpanzee families. Experience intimate observations of these intelligent primates, explore elevated canopy walkways, and discover the rich biodiversity of this pristine forest ecosystem.',
       image: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800',
       includes: [
-        'Chimpanzee tracking permit',
-        'Experienced tracker guide',
-        'Park fees',
-        'Nature walk briefing',
-        'Photography opportunities'
+        'Track over 1,500 chimpanzees across habituated family groups',
+        'Observe 13 primate species in the "Primate Capital of the World"',
+        'Explore East Africa\'s largest remaining mahogany forest',
+        'Extended chimpanzee habituation experience available',
+        'Bird watching and primate viewing in Bigodi Wetland',
+        'Forest canopy walk with elevated rainforest perspectives',
+        'Expert primate guides and tracking permits',
+        'All park fees and accommodation'
       ],
-      duration: '2-5 hours',
+      duration: '3 Days',
       difficulty: 'Moderate',
-      price: 'From $200 per person'
-    },
-    {
-      title: 'Boat Safari',
-      icon: '🚤',
-      tagline: 'Aquatic Wildlife Viewing',
-      description: 'There\'s something magical about watching wildlife from the water. Elephants come down to drink, hippos surface with grumpy snorts, and birds put on aerial shows. It\'s like having VIP seats to nature\'s most entertaining theater.',
-      image: 'https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800',
-      includes: [
-        'Professional boat captain',
-        'Life jackets and safety equipment',
-        'Bird identification guide',
-        'Refreshments on board',
-        'Waterproof binoculars'
-      ],
-      duration: '2-3 hours',
-      difficulty: 'Easy',
-      price: 'From $40 per person'
-    },
-    {
-      title: 'Cultural Experiences',
-      icon: '🎭',
-      tagline: 'Authentic Cultural Immersion',
-      description: 'Connect with Uganda\'s diverse cultures through village visits, traditional dance performances, and interactions with local communities including the Batwa pygmies.',
-      image: 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800',
-      includes: [
-        'Cultural guide and interpreter',
-        'Village community visit',
-        'Traditional dance performance',
-        'Local craft demonstrations',
-        'Community contribution'
-      ],
-      duration: '3-5 hours',
-      difficulty: 'Easy',
-      price: 'From $50 per person'
-    },
-    {
-      title: 'Bird Watching Safari',
-      icon: '🦅',
-      tagline: 'Ornithological Paradise',
-      description: 'Uganda boasts over 1,000 bird species. Join expert birding guides to spot rare and endemic species including the Shoebill stork and African Green Broadbill.',
-      image: 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800',
-      includes: [
-        'Specialist birding guide',
-        'Bird checklist and field guide',
-        'High-quality binoculars',
-        'Early morning bird walks',
-        'Photography support'
-      ],
-      duration: '3-7 days',
-      difficulty: 'Easy to Moderate',
-      price: 'From $150 per day'
+      price: '$200 per person',
+      rating: '4.8',
+      reviews: 178,
+      category: 'Wildlife Safari'
     }
   ]
 
@@ -163,9 +222,18 @@ export default function SafariExperiences() {
                 </div>
 
                 <div className="p-6">
-                  <h2 className="text-3xl font-bold text-safari-green mb-2">
-                    {experience.title}
-                  </h2>
+                  <div className="flex items-start justify-between mb-2">
+                    <h2 className="text-3xl font-bold text-safari-green flex-1">
+                      {experience.title}
+                    </h2>
+                    {experience.rating && (
+                      <div className="flex items-center ml-4">
+                        <span className="text-safari-gold text-xl mr-1">★</span>
+                        <span className="text-lg font-bold text-gray-800">{experience.rating}</span>
+                        <span className="text-sm text-gray-600 ml-1">({experience.reviews})</span>
+                      </div>
+                    )}
+                  </div>
                   <p className="text-lg text-safari-gold italic mb-4">{experience.tagline}</p>
 
                   <p className="text-gray-700 mb-6 leading-relaxed">
