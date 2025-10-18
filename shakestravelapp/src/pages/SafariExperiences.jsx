@@ -15,7 +15,7 @@ export default function SafariExperiences() {
       title: 'Gorilla Trekking',
       icon: '🦍',
       tagline: 'The Ultimate Wildlife Encounter',
-      description: 'Track mountain gorillas through ancient rainforests for an intimate encounter with our closest relatives. This once-in-a-lifetime experience brings you within meters of these gentle giants in their natural habitat.',
+      description: 'This isn\'t just tracking animals - it\'s meeting family. You\'ll hike through misty forests with our expert guides, then sit quietly as a gorilla family goes about their day just meters away. It\'s humbling, thrilling, and changes how you see the world.',
       image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
       includes: [
         'Expert gorilla tracking guides',
@@ -66,7 +66,7 @@ export default function SafariExperiences() {
       title: 'Boat Safari',
       icon: '🚤',
       tagline: 'Aquatic Wildlife Viewing',
-      description: 'Cruise along the Kazinga Channel or Nile River for spectacular views of hippos, crocodiles, elephants, and diverse birdlife congregating at the water\'s edge.',
+      description: 'There\'s something magical about watching wildlife from the water. Elephants come down to drink, hippos surface with grumpy snorts, and birds put on aerial shows. It\'s like having VIP seats to nature\'s most entertaining theater.',
       image: 'https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800',
       includes: [
         'Professional boat captain',
@@ -138,9 +138,9 @@ export default function SafariExperiences() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Every safari with Shakes Travel is more than just a trip - it's an immersive journey into the heart of
-            Africa's wilderness. We offer a diverse range of experiences designed to connect you with Uganda's
-            extraordinary wildlife, landscapes, and cultures.
+            Our safari experiences are thoughtfully designed to immerse you in Uganda's remarkable wildlife and natural beauty.
+            From tracking mountain gorillas through ancient forests to exploring the Nile's scenic waterways—each adventure is
+            expertly curated to create transformative and meaningful travel moments.
           </p>
         </div>
       </section>
@@ -222,7 +222,7 @@ export default function SafariExperiences() {
               <div className="text-5xl mb-4">🌅</div>
               <h3 className="text-2xl font-bold mb-3">Early Starts</h3>
               <p className="text-gray-200">
-                Wildlife is most active at dawn. Be prepared for early morning departures to maximize your sightings.
+                The animals are early risers, so you should be too! Those pre-dawn starts mean you\'ll be there when the lions are most active and the light is perfect for photos.
               </p>
             </div>
 
@@ -230,7 +230,7 @@ export default function SafariExperiences() {
               <div className="text-5xl mb-4">📸</div>
               <h3 className="text-2xl font-bold mb-3">Photo Opportunities</h3>
               <p className="text-gray-200">
-                Bring your camera! You'll have countless opportunities to capture incredible wildlife moments.
+                Oh, and bring extra memory cards! You'll want to capture every moment - from a gorilla's curious stare to an elephant's knowing wink.
               </p>
             </div>
 
@@ -252,8 +252,7 @@ export default function SafariExperiences() {
             Combine Multiple Experiences
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Create your perfect safari by combining different experiences. Our team will help you design
-            an itinerary that matches your interests, budget, and time frame.
+            Combine multiple experiences to create your ideal Uganda safari. Our team will design a custom itinerary that matches your interests, timeline, and travel style.
           </p>
           <button onClick={() => handleBooking('Custom Package')} className="btn-primary text-lg">
             Design Your Safari

@@ -14,7 +14,7 @@ export default function Destinations() {
     {
       name: 'Bwindi Impenetrable National Park',
       tagline: 'Home of the Mountain Gorillas',
-      description: 'Bwindi Impenetrable National Park is a UNESCO World Heritage Site and one of the most biologically diverse areas on Earth. It is home to approximately half of the world\'s remaining mountain gorilla population.',
+      description: 'Imagine stepping into a real-life jungle book where mountain gorillas peer at you through the mist. Bwindi isn\'t just a park - it\'s where you come face-to-face with families of these gentle giants, where every hike feels like a personal invitation into their world.',
       image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
       highlights: [
         'Mountain Gorilla Trekking',
@@ -28,7 +28,7 @@ export default function Destinations() {
     {
       name: 'Queen Elizabeth National Park',
       tagline: 'Medley of Wonders',
-      description: 'Uganda\'s most popular tourist destination, Queen Elizabeth National Park boasts diverse ecosystems from savanna to wetlands, and is famous for its tree-climbing lions and boat cruise on the Kazinga Channel.',
+      description: 'This place has it all - from lions lounging in trees (yes, really!) to elephants marching to the water\'s edge. Take a boat cruise on the Kazinga Channel and watch hippos yawn, crocs bask, and birds put on a show. It\'s like nature decided to throw the ultimate wildlife party.',
       image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
       highlights: [
         'Tree-climbing lions in Ishasha',
@@ -42,7 +42,7 @@ export default function Destinations() {
     {
       name: 'Murchison Falls National Park',
       tagline: 'Where Nature Performs',
-      description: 'Uganda\'s largest national park features the dramatic Murchison Falls, where the Nile River explodes through a narrow gorge. The park offers exceptional wildlife viewing and stunning landscapes.',
+      description: 'Picture the world\'s longest river squeezing through a tiny crack in the rocks and exploding out the other side - that\'s Murchison Falls! Watch the Nile force its way through, then hop on a boat to see crocs, hippos, and elephants along the banks. It\'s raw power meets pure beauty.',
       image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=800',
       highlights: [
         'Murchison Falls boat trip',
@@ -120,10 +120,9 @@ export default function Destinations() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Uganda is blessed with an incredible diversity of landscapes and wildlife. From mist-shrouded mountains
-            where mountain gorillas roam, to vast savanna plains teeming with elephants and lions, each destination
-            offers a unique window into Africa's natural wonders. Let Shakes Travel guide you through these
-            extraordinary ecosystems.
+            Uganda offers incredible diversity—from ancient rainforests where mountain gorillas roam, to vast savanna plains alive with wildlife.
+            Each destination showcases unique ecosystems, breathtaking scenery, and unforgettable wildlife encounters. Let us guide you through
+            the Pearl of Africa's most spectacular national parks and natural wonders.
           </p>
         </div>
       </section>
@@ -204,8 +203,7 @@ export default function Destinations() {
             Create Your Custom Safari Itinerary
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Combine multiple destinations for the ultimate Uganda adventure. Our experts will help you
-            design the perfect itinerary based on your interests and schedule.
+            Combine multiple destinations to create your perfect Uganda safari. Our expertly curated itineraries can blend diverse experiences based on your interests and schedule.
           </p>
           <button onClick={() => handleBooking('Custom Itinerary')} className="btn-primary text-lg">
             Get Started

@@ -6,44 +6,44 @@ export default function About() {
 
   const teamMembers = [
     {
-      name: 'Safari Guide Team',
-      role: 'Expert Local Guides',
-      description: 'Our passionate guides bring years of experience and deep knowledge of Uganda\'s wildlife and cultures.',
+      name: 'Safari Experts',
+      role: 'Local Guides & Trackers',
+      description: 'Experienced professionals with deep knowledge of Uganda\'s wildlife, culture, and ecosystems—bringing each safari to life with authentic insights.',
       icon: '🧭'
     },
     {
-      name: 'Operations Team',
-      role: 'Safari Planners',
-      description: 'Dedicated professionals who craft personalized itineraries and ensure seamless safari experiences.',
+      name: 'Planning Team',
+      role: 'Itinerary Specialists',
+      description: 'We craft each safari with attention to detail, ensuring seamless logistics and unforgettable experiences tailored to your interests.',
       icon: '📋'
     },
     {
-      name: 'Customer Care',
-      role: '24/7 Support',
-      description: 'Always available to assist you before, during, and after your safari adventure.',
+      name: 'Support Team',
+      role: 'Guest Services',
+      description: 'Available to assist you before, during, and after your journey—ensuring your Uganda adventure exceeds expectations.',
       icon: '💬'
     }
   ]
 
   const values = [
     {
-      title: 'Conservation',
-      description: 'We are committed to protecting Uganda\'s precious wildlife and natural habitats for future generations.',
+      title: 'Environmental Stewardship',
+      description: 'Through Planting Green Paths, we restore ecosystems and reduce tourism\'s impact—ensuring Uganda\'s natural beauty endures for future generations.',
       icon: '🌿'
     },
     {
-      title: 'Community',
-      description: 'We work closely with local communities, ensuring our safaris benefit the people who call Uganda home.',
+      title: 'Community Partnership',
+      description: 'We work closely with local communities and conservation partners to ensure tourism benefits the people who call Uganda home.',
       icon: '🤝'
     },
     {
-      title: 'Excellence',
-      description: 'We deliver exceptional safari experiences through attention to detail and personalized service.',
+      title: 'Expert Curation',
+      description: 'Every safari is thoughtfully designed with deep local knowledge to create transformative and memorable travel experiences.',
       icon: '⭐'
     },
     {
-      title: 'Authenticity',
-      description: 'We provide genuine, immersive experiences that showcase the real Uganda beyond the tourist trail.',
+      title: 'Responsible Tourism',
+      description: 'We promote sustainable travel practices that protect wildlife, preserve culture, and support conservation efforts across Uganda.',
       icon: '🎯'
     }
   ]
@@ -62,7 +62,7 @@ export default function About() {
             About Shakes Travel
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Inspiring and crafting unforgettable safari experiences across Uganda since inception
+            Inspiring and crafting expertly planned safari experiences across Uganda's breathtaking landscapes
           </p>
         </div>
       </section>
@@ -74,22 +74,13 @@ export default function About() {
             <h2 className="section-title text-center mb-8">Our Story</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Shakes Travel was born from a deep passion for Uganda's extraordinary wildlife and natural beauty.
-                We believe that every person should have the opportunity to experience the magic of encountering
-                mountain gorillas in the mist, witnessing lions on the savanna, and connecting with the warm,
-                welcoming people of Uganda.
+                Shakes Travel was founded to inspire travelers to discover Uganda's breathtaking natural beauty, vibrant culture, and diverse landscapes. We believe travel should be transformative—connecting you meaningfully with the places you visit while leaving a positive impact.
               </p>
               <p>
-                What started as a dream to share Uganda's wonders with the world has grown into a trusted safari
-                company known for creating transformative travel experiences. We take pride in our deep knowledge
-                of Uganda's national parks, our relationships with local communities, and our commitment to
-                sustainable tourism practices.
+                At the heart of our work is the Planting Green Paths Initiative, our dedicated environmental conservation program. Through partnerships with local conservation organizations, we promote tree planting to restore Uganda's ecosystems, combat deforestation, and reduce tourism's environmental footprint. Every tree we plant helps preserve the biodiversity and natural beauty that make Uganda such a compelling destination.
               </p>
               <p>
-                Every safari we organize is more than just a trip - it's a carefully crafted journey designed to
-                inspire, educate, and create memories that last a lifetime. We work tirelessly to ensure that
-                your time in Uganda exceeds your expectations and leaves you with a profound appreciation for
-                this remarkable country we call the Pearl of Africa.
+                Our mission is clear: to deliver expertly curated safari adventures that immerse you in Uganda's culture, wildlife, and landscapes while promoting responsible tourism. Whether you're tracking mountain gorillas in Bwindi, exploring the source of the Nile in Jinja, hiking the Rwenzori Mountains, or experiencing scenic nature adventures—each itinerary is crafted with deep local insight to connect you with the true spirit of Uganda.
               </p>
             </div>
           </div>
@@ -231,8 +222,7 @@ export default function About() {
             Ready to Start Your Uganda Adventure?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let our experienced team help you plan the safari of your dreams. Contact us today to begin
-            your journey to the Pearl of Africa.
+            Your gateway to unforgettable Uganda safari adventures begins here. Let us craft an expertly planned journey that immerses you in the Pearl of Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button onClick={() => setIsModalOpen(true)} className="btn-primary text-lg">

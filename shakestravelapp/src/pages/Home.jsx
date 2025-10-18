@@ -69,7 +69,7 @@ export default function Home() {
             Discover the Pearl of Africa
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Inspiring and crafting unforgettable safari experiences across Uganda's breathtaking landscapes
+            Expertly curated safari adventures that immerse you in Uganda's breathtaking wildlife, vibrant culture, and natural beauty—while leaving a greener footprint
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button onClick={() => handleBooking()} className="btn-primary text-lg">
@@ -88,32 +88,32 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="section-title">Why Choose Shakes Travel?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We don't just organize safaris - we craft life-changing experiences that connect you with Uganda's incredible wilderness
+              We craft expertly planned safari experiences that connect you deeply with Uganda's culture, wildlife, and landscapes—all while promoting responsible tourism
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card p-8 text-center">
               <div className="text-5xl mb-4">🏆</div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Expert Guides</h3>
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Local Expertise</h3>
               <p className="text-gray-600">
-                Our experienced local guides bring Uganda's wildlife and culture to life with their deep knowledge and passion
+                Every itinerary is crafted with deep local insight, ensuring you connect authentically with Uganda's wildlife, culture, and people
               </p>
             </div>
 
             <div className="card p-8 text-center">
               <div className="text-5xl mb-4">🌿</div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Sustainable Tourism</h3>
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Planting Green Paths</h3>
               <p className="text-gray-600">
-                We're committed to responsible tourism that protects wildlife and benefits local communities
+                Through our environmental conservation initiative, every journey contributes to tree planting, restoring Uganda's ecosystems and reducing tourism's impact
               </p>
             </div>
 
             <div className="card p-8 text-center">
               <div className="text-5xl mb-4">✨</div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Tailored Experiences</h3>
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Curated Adventures</h3>
               <p className="text-gray-600">
-                Every safari is customized to match your interests, budget, and travel style
+                From gorilla trekking in Bwindi to exploring the Nile's source in Jinja—our safaris are thoughtfully designed to match your interests and travel style
               </p>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="section-title">Featured Destinations</h2>
             <p className="text-xl text-gray-600">
-              Explore Uganda's most spectacular safari destinations
+              Explore Uganda's diverse landscapes—from misty rainforests to sprawling savannas. Each destination offers unique wildlife encounters and natural beauty
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Safari Experiences</h2>
             <p className="text-xl text-gray-200">
-              Choose from our range of carefully curated safari experiences
+              Choose from thoughtfully designed experiences—from tracking mountain gorillas to scenic nature adventures across Uganda's most stunning landscapes
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
             Ready for Your Uganda Adventure?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let us help you create memories that will last a lifetime. Our team is ready to craft your perfect safari experience.
+            Let us craft your perfect Uganda safari adventure. From breathtaking wildlife to vibrant culture—your journey to the Pearl of Africa starts here.
           </p>
           <button onClick={() => handleBooking()} className="btn-primary text-lg">
             Book Your Safari Today
