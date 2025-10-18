@@ -240,17 +240,19 @@ export default function SafariExperiences() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-safari-light border-t-4 border-safari-gold">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-safari-green mb-6">
-            Combine Multiple Experiences
-          </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Combine multiple experiences to create your ideal Uganda safari. Our team will design a custom itinerary that matches your interests, timeline, and travel style.
-          </p>
-          <button onClick={() => handleBooking('Custom Package')} className="btn-primary text-lg">
-            Design Your Safari
-          </button>
+      <section className="py-20 bg-safari-light">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-safari-green mb-6">
+              Combine Multiple Experiences
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+              Combine multiple experiences to create your ideal Uganda safari. Our team will design a custom itinerary that matches your interests, timeline, and travel style.
+            </p>
+            <button onClick={() => handleBooking('Custom Package')} className="btn-primary text-lg">
+              Design Your Safari
+            </button>
+          </div>
         </div>
       </section>
 

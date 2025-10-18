@@ -219,21 +219,23 @@ export default function About() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 border-t-4 border-safari-gold">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-safari-green">
-            Ready to Start Your Uganda Adventure?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
-            Your gateway to unforgettable Uganda safari adventures begins here. Let us craft an expertly planned journey that immerses you in the Pearl of Africa.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => setIsModalOpen(true)} className="btn-primary text-lg">
-              Book Your Safari
-            </button>
-            <a href="mailto:info@shakestravel.com" className="btn-secondary text-lg">
-              Contact Us
-            </a>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-safari-green">
+              Ready to Start Your Uganda Adventure?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
+              Your gateway to unforgettable Uganda safari adventures begins here. Let us craft an expertly planned journey that immerses you in the Pearl of Africa.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button onClick={() => setIsModalOpen(true)} className="btn-primary text-lg">
+                Book Your Safari
+              </button>
+              <a href="mailto:info@shakestravel.com" className="btn-secondary text-lg">
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

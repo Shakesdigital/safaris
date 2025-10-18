@@ -203,17 +203,19 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-safari-light border-t-4 border-safari-gold">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
-            Ready for Your Uganda Adventure?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
-            Let us craft your perfect Uganda safari adventure. From breathtaking wildlife to vibrant culture—your journey to the Pearl of Africa starts here.
-          </p>
-          <button onClick={() => handleBooking()} className="btn-primary text-lg">
-            Book Your Safari Today
-          </button>
+      <section className="py-20 bg-safari-light">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
+              Ready for Your Uganda Adventure?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
+              Let us craft your perfect Uganda safari adventure. From breathtaking wildlife to vibrant culture—your journey to the Pearl of Africa starts here.
+            </p>
+            <button onClick={() => handleBooking()} className="btn-primary text-lg">
+              Book Your Safari Today
+            </button>
+          </div>
         </div>
       </section>
 
