@@ -41,10 +41,8 @@ export default function Navigation() {
 
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl md:text-3xl font-bold text-safari-green font-heading">
-              Shakes Travel
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src="/logo.png" alt="Shakes Travel Logo" className="h-16 md:h-20 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
