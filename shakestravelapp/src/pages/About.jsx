@@ -74,13 +74,16 @@ export default function About() {
             <h2 className="section-title text-center mb-8">Our Story</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Shakes Travel was founded to inspire travelers to discover Uganda's breathtaking natural beauty, vibrant culture, and diverse landscapes. We believe travel should be transformative—connecting you meaningfully with the places you visit while leaving a positive impact.
+                Inspired by the beauty and magnificence of Uganda's landscapes, wildlife, people, and culture, Shakes Travel Agency was founded to showcase this splendor to the world while promoting sustainable environmental protection and enhancing the well-being of local communities living in the destinations that harbor these wonders.
               </p>
               <p>
-                At the heart of our work is the Planting Green Paths Initiative, our dedicated environmental conservation program. Through partnerships with local conservation organizations, we promote tree planting to restore Uganda's ecosystems, combat deforestation, and reduce tourism's environmental footprint. Every tree we plant helps preserve the biodiversity and natural beauty that make Uganda such a compelling destination.
+                Shakes Travel inspires travelers to discover Uganda's breathtaking natural beauty, vibrant culture, and diverse landscapes through expertly crafted safari experiences that connect you with Uganda's natural wonders and fully immerse you in its people and culture. We believe travel should be transformative, fostering meaningful connections with the places you visit while leaving a positive impact.
               </p>
               <p>
-                Our mission is clear: to deliver expertly curated safari adventures that immerse you in Uganda's culture, wildlife, and landscapes while promoting responsible tourism. Whether you're tracking mountain gorillas in Bwindi, exploring the source of the Nile in Jinja, hiking the Rwenzori Mountains, or experiencing scenic nature adventures—each itinerary is crafted with deep local insight to connect you with the true spirit of Uganda.
+                At the heart of our mission is the Planting Green Paths initiative, our dedicated effort to sustainably conserve the environment across Uganda's tourist and safari destinations. Through partnerships with local conservation organizations and communities, we promote tree planting, and community environment protection initiatives to restore ecosystems, combat deforestation, and reduce tourism's environmental footprint. Every tree we plant helps preserve the biodiversity and natural beauty that make Uganda such a compelling destination.
+              </p>
+              <p>
+                Our mission is to deliver expertly curated safari adventures that immerse you in Uganda's culture, wildlife, and landscapes while promoting responsible tourism. Whether you're tracking mountain gorillas in Bwindi, exploring the source of the Nile in Jinja, hiking the Rwenzori Mountains, or embarking on scenic nature adventures, each itinerary is crafted with deep local insight to connect you with the true spirit of Uganda.
               </p>
             </div>
           </div>
