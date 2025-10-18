@@ -11,6 +11,7 @@ export default function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/destinations', label: 'Destinations' },
     { path: '/experiences', label: 'Safari Experiences' },
+    { path: '/planting-green-paths', label: 'Planting Green Paths' },
     { path: '/about', label: 'About' },
   ]
 
