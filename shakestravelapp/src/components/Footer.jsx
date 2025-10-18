@@ -6,7 +6,6 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-6">
           <div>
-            <h3 className="text-xl font-bold mb-3">About Us</h3>
             <img src="/logo.png" alt="Shakes Travel Logo" className="h-16 w-auto mb-3" />
             <p className="text-gray-300">Inspiring and crafting unforgettable safari experiences across Uganda</p>
           </div>
