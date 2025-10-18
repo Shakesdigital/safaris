@@ -219,12 +219,12 @@ export default function About() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-safari-green to-safari-brown text-white">
+      <section className="py-16 border-t-4 border-safari-gold">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-safari-green">
             Ready to Start Your Uganda Adventure?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
             Your gateway to unforgettable Uganda safari adventures begins here. Let us craft an expertly planned journey that immerses you in the Pearl of Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

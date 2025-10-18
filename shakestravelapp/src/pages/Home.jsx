@@ -175,21 +175,21 @@ export default function Home() {
       </section>
 
       {/* Safari Experiences */}
-      <section className="py-20 bg-safari-green text-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Safari Experiences</h2>
-            <p className="text-xl text-gray-200">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-safari-green">Safari Experiences</h2>
+            <p className="text-xl text-gray-600">
               Choose from thoughtfully designed experiences—from tracking mountain gorillas to scenic nature adventures across Uganda's most stunning landscapes
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {experiences.map((exp, index) => (
-              <div key={index} className="text-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition">
+              <div key={index} className="card text-center p-6">
                 <div className="text-6xl mb-4">{exp.icon}</div>
-                <h3 className="text-2xl font-bold mb-3">{exp.title}</h3>
-                <p className="text-gray-200">{exp.description}</p>
+                <h3 className="text-2xl font-bold mb-3 text-safari-green">{exp.title}</h3>
+                <p className="text-gray-600">{exp.description}</p>
               </div>
             ))}
           </div>
@@ -203,12 +203,12 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-safari-green to-safari-brown text-white">
+      <section className="py-20 bg-safari-light border-t-4 border-safari-gold">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
             Ready for Your Uganda Adventure?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
             Let us craft your perfect Uganda safari adventure. From breathtaking wildlife to vibrant culture—your journey to the Pearl of Africa starts here.
           </p>
           <button onClick={() => handleBooking()} className="btn-primary text-lg">

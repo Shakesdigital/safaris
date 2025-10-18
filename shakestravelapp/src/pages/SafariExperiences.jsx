@@ -207,31 +207,31 @@ export default function SafariExperiences() {
       </section>
 
       {/* What to Expect */}
-      <section className="py-16 bg-safari-green text-white">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">What to Expect on Safari</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-safari-green">What to Expect on Safari</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
+            <div className="card text-center p-6">
               <div className="text-5xl mb-4">🌅</div>
-              <h3 className="text-2xl font-bold mb-3">Early Starts</h3>
-              <p className="text-gray-200">
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Early Starts</h3>
+              <p className="text-gray-700">
                 The animals are early risers, so you should be too! Those pre-dawn starts mean you\'ll be there when the lions are most active and the light is perfect for photos.
               </p>
             </div>
 
-            <div className="text-center p-6">
+            <div className="card text-center p-6">
               <div className="text-5xl mb-4">📸</div>
-              <h3 className="text-2xl font-bold mb-3">Photo Opportunities</h3>
-              <p className="text-gray-200">
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Photo Opportunities</h3>
+              <p className="text-gray-700">
                 Oh, and bring extra memory cards! You'll want to capture every moment - from a gorilla's curious stare to an elephant's knowing wink.
               </p>
             </div>
 
-            <div className="text-center p-6">
+            <div className="card text-center p-6">
               <div className="text-5xl mb-4">🥾</div>
-              <h3 className="text-2xl font-bold mb-3">Physical Activity</h3>
-              <p className="text-gray-200">
+              <h3 className="text-2xl font-bold mb-3 text-safari-green">Physical Activity</h3>
+              <p className="text-gray-700">
                 Some experiences involve trekking. Maintain a moderate fitness level and bring appropriate gear.
               </p>
             </div>
@@ -240,7 +240,7 @@ export default function SafariExperiences() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16">
+      <section className="py-16 bg-safari-light border-t-4 border-safari-gold">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-safari-green mb-6">
             Combine Multiple Experiences
