@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import Destinations from './pages/Destinations'
 import SafariExperiences from './pages/SafariExperiences'
+import ExperienceDetail from './pages/ExperienceDetail'
 import About from './pages/About'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/experiences" element={<SafariExperiences />} />
+            <Route path="/experiences/:slug" element={<ExperienceDetail />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>

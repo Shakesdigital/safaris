@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 
 export default function SafariExperiences() {
@@ -12,6 +13,7 @@ export default function SafariExperiences() {
 
   const experiences = [
     {
+      slug: 'queen-elizabeth-safari',
       title: 'Queen Elizabeth National Park Safari',
       icon: '🦁',
       tagline: 'Tree-Climbing Lions & Kazinga Channel',
@@ -35,6 +37,7 @@ export default function SafariExperiences() {
       category: 'Wildlife Safari'
     },
     {
+      slug: 'murchison-falls-safari',
       title: 'Murchison Falls National Park Safari',
       icon: '💦',
       tagline: 'The Mighty Nile\'s Explosive Power',
@@ -58,6 +61,7 @@ export default function SafariExperiences() {
       category: 'Wildlife Safari'
     },
     {
+      slug: 'kidepo-valley-safari',
       title: 'Kidepo Valley National Park Safari',
       icon: '🦒',
       tagline: 'Uganda\'s Remote Wilderness Paradise',
@@ -81,6 +85,7 @@ export default function SafariExperiences() {
       category: 'Wildlife Safari'
     },
     {
+      slug: 'lake-mburo-safari',
       title: 'Lake Mburo National Park Safari',
       icon: '🦓',
       tagline: 'Walking Safaris & Unique Wildlife',
@@ -104,6 +109,7 @@ export default function SafariExperiences() {
       category: 'Wildlife Safari'
     },
     {
+      slug: 'rwenzori-mountains-trek',
       title: 'Rwenzori Mountains Trek to Margherita Peak',
       icon: '⛰️',
       tagline: 'Africa\'s Mystical Mountains of the Moon',
@@ -127,6 +133,7 @@ export default function SafariExperiences() {
       category: 'Adventure & Hiking'
     },
     {
+      slug: 'bwindi-gorilla-trekking',
       title: 'Gorilla Trekking in Bwindi Impenetrable National Park',
       icon: '🦍',
       tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
@@ -150,6 +157,7 @@ export default function SafariExperiences() {
       category: 'Wildlife Safari'
     },
     {
+      slug: 'kibale-chimp-tracking',
       title: 'Chimpanzee Tracking in Kibale National Park',
       icon: '🐵',
       tagline: 'Primate Capital of the World',
@@ -267,12 +275,12 @@ export default function SafariExperiences() {
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => handleBooking(experience.title)}
-                    className="btn-primary w-full"
+                  <Link
+                    to={`/experiences/${experience.slug}`}
+                    className="btn-primary w-full block text-center"
                   >
-                    Book This Experience
-                  </button>
+                    View Full Details
+                  </Link>
                 </div>
               </div>
             ))}
