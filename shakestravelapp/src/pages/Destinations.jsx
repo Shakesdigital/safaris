@@ -110,6 +110,48 @@ export default function Destinations() {
       ],
       bestTime: 'September to March',
       duration: '2-3 days'
+    },
+    {
+      name: 'Semuliki Valley National Park',
+      tagline: 'Biodiversity Hotspot',
+      description: 'East Africa\'s only lowland tropical rainforest, Semuliki Valley represents a living museum of prehistoric biological diversity. This ancient forest is a biological bridge between Central and East African environments, hosting species found nowhere else in East Africa.',
+      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800',
+      highlights: [
+        'Sempaya Hot Springs',
+        '441 bird species including 35 Guinea-Congo biome species',
+        '8 primate species and unique Central African mammals',
+        'Ancient rainforest ecosystem'
+      ],
+      bestTime: 'December to February, June to September',
+      duration: '2-3 days'
+    },
+    {
+      name: 'Rwenzori Mountains National Park',
+      tagline: 'Mountains of the Moon',
+      description: 'The Rwenzori Mountains are tectonic mountains with year-round snow and glaciers, offering epic high-altitude trekking through otherworldly landscapes. Home to Africa\'s third-highest peak and unique afro-alpine vegetation including giant lobelias and groundsels.',
+      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      highlights: [
+        'Margherita Peak (5,109m) - Africa\'s third-highest mountain',
+        'Unique afro-alpine flora and glacial lakes',
+        'Technical climbing and mountaineering',
+        'Bakonzo cultural experiences'
+      ],
+      bestTime: 'June to August, December to February',
+      duration: '5-12 days'
+    },
+    {
+      name: 'Mount Elgon National Park',
+      tagline: 'Africa\'s Ancient Giant',
+      description: 'An extinct volcano with the world\'s largest intact caldera, Mount Elgon offers rugged hiking through diverse ecosystems from montane forest to afro-alpine moorland. Home to Uganda\'s highest point and spectacular waterfalls including the famous Sipi Falls.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      highlights: [
+        'Wagagai Peak (4,321m) - Uganda\'s highest point',
+        'World\'s largest volcanic caldera (40 km²)',
+        'Spectacular Sipi Falls and hot springs',
+        'UNESCO Biosphere Reserve status'
+      ],
+      bestTime: 'December to February, June to September',
+      duration: '3-6 days'
     }
   ]
 
