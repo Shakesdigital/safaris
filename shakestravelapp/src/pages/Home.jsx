@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Shakes Travel */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="section-title">Why Choose Shakes Travel?</h2>
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Featured Destinations */}
-      <section className="py-20">
+      <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="section-title">Featured Destinations</h2>

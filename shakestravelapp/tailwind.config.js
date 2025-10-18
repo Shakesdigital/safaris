@@ -9,6 +9,7 @@ export default {
         'safari-green': '#24684f',
         'safari-gold': '#d4af37',
         'safari-brown': '#24684f',
+        'safari-light': '#f9fafc',
       },
       fontFamily: {
         'heading': ['Georgia', 'serif'],

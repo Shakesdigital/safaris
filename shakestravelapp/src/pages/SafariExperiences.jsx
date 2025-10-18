@@ -132,7 +132,7 @@ export default function SafariExperiences() {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-lg text-gray-700 leading-relaxed">
             We believe that the best safari experiences come from genuine connections - with the land, the wildlife, and the people who call these places home.
@@ -143,7 +143,7 @@ export default function SafariExperiences() {
       </section>
 
       {/* Experiences */}
-      <section className="py-20">
+      <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             {experiences.map((experience, index) => (
@@ -240,7 +240,7 @@ export default function SafariExperiences() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-safari-green mb-6">
             Combine Multiple Experiences

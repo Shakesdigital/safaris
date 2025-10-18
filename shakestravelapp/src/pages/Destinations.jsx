@@ -175,7 +175,7 @@ export default function Destinations() {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-lg text-gray-700 leading-relaxed">
             Uganda offers incredible diversity—from ancient rainforests where mountain gorillas roam, to vast savanna plains alive with wildlife.
@@ -186,7 +186,7 @@ export default function Destinations() {
       </section>
 
       {/* Destinations Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="space-y-16">
             {destinations.map((destination, index) => (

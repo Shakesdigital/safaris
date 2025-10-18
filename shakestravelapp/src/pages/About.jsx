@@ -91,7 +91,7 @@ export default function About() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-12">Our Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -180,7 +180,7 @@ export default function About() {
       </section>
 
       {/* Our Commitment */}
-      <section className="py-20">
+      <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title mb-8">Our Commitment to Sustainability</h2>
