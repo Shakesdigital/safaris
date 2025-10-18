@@ -8,7 +8,7 @@ export default function ExperienceDetail() {
 
   const experiences = {
     'queen-elizabeth-safari': {
-      title: 'Queen Elizabeth National Park Safari',
+      title: '3 Days Safari Experience to Queen Elizabeth National Park',
       tagline: 'Tree-Climbing Lions & Kazinga Channel',
       location: 'Queen Elizabeth National Park',
       category: 'Wildlife Safari',
@@ -91,7 +91,7 @@ Explore the mystical crater lakes dotting the park's northern edge, where ancien
       ]
     },
     'murchison-falls-safari': {
-      title: 'Murchison Falls National Park Safari',
+      title: '3 Days Safari Experience to Murchison Falls National Park',
       tagline: 'The Mighty Nile\'s Explosive Power',
       location: 'Murchison Falls National Park',
       category: 'Wildlife Safari',
@@ -175,7 +175,7 @@ Hike to the top of the falls for breathtaking views as the Nile squeezes through
       ]
     },
     'kidepo-valley-safari': {
-      title: 'Kidepo Valley National Park Safari',
+      title: '3 Days Safari Experience to Kidepo Valley National Park',
       tagline: 'Uganda\'s Remote Wilderness Paradise',
       location: 'Kidepo Valley National Park',
       category: 'Wildlife Safari',
@@ -262,7 +262,7 @@ Beyond wildlife, Kidepo's landscapes captivate with their raw beauty. The season
       ]
     },
     'lake-mburo-safari': {
-      title: 'Lake Mburo National Park Safari',
+      title: '3 Days Safari Experience to Lake Mburo National Park',
       tagline: 'Walking Safaris & Unique Wildlife',
       location: 'Lake Mburo National Park',
       category: 'Wildlife Safari',
@@ -350,7 +350,7 @@ Birding enthusiasts will find over 350 bird species, including the rare African 
       ]
     },
     'rwenzori-mountains-trek': {
-      title: 'Rwenzori Mountains Trek to Margherita Peak',
+      title: '8 Days Trekking Experience to Rwenzori Mountains Margherita Peak',
       tagline: 'Africa\'s Mystical Mountains of the Moon',
       location: 'Rwenzori Mountains National Park',
       category: 'Adventure & Hiking',
@@ -465,7 +465,7 @@ Beyond the physical challenge, the Rwenzori trek offers a profound wilderness ex
       ]
     },
     'bwindi-gorilla-trekking': {
-      title: 'Gorilla Trekking in Bwindi Impenetrable National Park',
+      title: '3 Days Safari Experience to Bwindi Impenetrable National Park',
       tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
       location: 'Bwindi Impenetrable National Park',
       category: 'Wildlife Safari',
@@ -554,7 +554,7 @@ Beyond gorilla trekking, Bwindi offers cultural encounters with Batwa pygmies, t
       ]
     },
     'kibale-chimp-tracking': {
-      title: 'Chimpanzee Tracking in Kibale National Park',
+      title: '3 Days Safari Experience to Kibale National Park',
       tagline: 'Primate Capital of the World',
       location: 'Kibale National Park',
       category: 'Wildlife Safari',

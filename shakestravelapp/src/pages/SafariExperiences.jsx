@@ -14,7 +14,7 @@ export default function SafariExperiences() {
   const experiences = [
     {
       slug: 'queen-elizabeth-safari',
-      title: 'Queen Elizabeth National Park Safari',
+      title: '3 Days Safari Experience to Queen Elizabeth National Park',
       icon: '🦁',
       tagline: 'Tree-Climbing Lions & Kazinga Channel',
       description: 'Discover Uganda\'s most popular safari destination where tree-climbing lions lounge in the Ishasha sector, and the Kazinga Channel teems with hippos, elephants, and over 600 bird species. This 3-day adventure combines classic game drives with unforgettable boat safaris through one of Africa\'s most biodiverse ecosystems.',
@@ -28,7 +28,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'murchison-falls-safari',
-      title: 'Murchison Falls National Park Safari',
+      title: '3 Days Safari Experience to Murchison Falls National Park',
       icon: '💦',
       tagline: 'The Mighty Nile\'s Explosive Power',
       description: 'Witness the world\'s longest river explode through a 7-meter gorge in one of nature\'s most dramatic displays. This 3-day safari combines the thundering spectacle of Murchison Falls with exceptional wildlife viewing including lions, elephants, giraffes, and over 450 bird species along the Nile\'s banks.',
@@ -42,7 +42,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'kidepo-valley-safari',
-      title: 'Kidepo Valley National Park Safari',
+      title: '3 Days Safari Experience to Kidepo Valley National Park',
       icon: '🦒',
       tagline: 'Uganda\'s Remote Wilderness Paradise',
       description: 'Venture into Uganda\'s most remote and spectacular wilderness where vast golden savannahs stretch to distant mountain ranges. Kidepo offers unique wildlife found nowhere else in Uganda including cheetahs, ostriches, and greater kudus, combined with authentic cultural encounters with the Karamojong people.',
@@ -56,7 +56,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'lake-mburo-safari',
-      title: 'Lake Mburo National Park Safari',
+      title: '3 Days Safari Experience to Lake Mburo National Park',
       icon: '🦓',
       tagline: 'Walking Safaris & Unique Wildlife',
       description: 'Experience Uganda\'s only park where you can enjoy walking safaris, horseback riding, and boat cruises all in one destination. Home to Uganda\'s only populations of zebras and impalas, Lake Mburo offers intimate wildlife encounters in a compact, accessible setting perfect for those with limited time.',
@@ -70,7 +70,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'rwenzori-mountains-trek',
-      title: 'Rwenzori Mountains Trek to Margherita Peak',
+      title: '8 Days Trekking Experience to Rwenzori Mountains Margherita Peak',
       icon: '⛰️',
       tagline: 'Africa\'s Mystical Mountains of the Moon',
       description: 'Conquer Africa\'s third-highest peak at 5,109 meters on this challenging 7-9 day trek through otherworldly landscapes. Journey through bamboo forests, heath moorlands, and Afro-alpine zones to reach glacial valleys and snow-capped peaks in this UNESCO World Heritage Site known as the "Mountains of the Moon."',
@@ -84,7 +84,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'bwindi-gorilla-trekking',
-      title: 'Gorilla Trekking in Bwindi Impenetrable National Park',
+      title: '3 Days Safari Experience to Bwindi Impenetrable National Park',
       icon: '🦍',
       tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
       description: 'Experience the magic of encountering mountain gorillas in their natural habitat within Bwindi Impenetrable National Park, a UNESCO World Heritage Site that has remained largely unchanged for over 25,000 years. Home to nearly half the world\'s remaining mountain gorilla population, this extraordinary journey combines thrilling gorilla tracking with profound wildlife encounters.',
@@ -98,7 +98,7 @@ export default function SafariExperiences() {
     },
     {
       slug: 'kibale-chimp-tracking',
-      title: 'Chimpanzee Tracking in Kibale National Park',
+      title: '3 Days Safari Experience to Kibale National Park',
       icon: '🐵',
       tagline: 'Primate Capital of the World',
       description: 'Venture into the lush expanse of Kibale National Park, Uganda\'s premier destination for primate encounters and home to over 1,500 chimpanzees. This 795 square kilometer protected area contains East Africa\'s largest remaining tropical rainforest, supporting 13 primate species including habituated chimpanzee families.',
