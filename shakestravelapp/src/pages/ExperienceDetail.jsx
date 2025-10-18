@@ -649,7 +649,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
   const experience = experiences[slug]
 
   if (!experience) {
-    return <Navigate to="/safari-experiences" replace />
+    return <Navigate to="/experiences" replace />
   }
 
   return (
