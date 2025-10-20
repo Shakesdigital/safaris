@@ -15,7 +15,13 @@
       "Read(//c/My Web Sites/shakes travel website mirror/shakestravel.com/experiences/**)",
       "Read(//c/Users/TECH DEAL/Desktop/ST Research/EA Travel destination Guides/Uganda/**)",
       "Bash(python -c \"from docx import Document; doc = Document(''Kibale National Park - Premium Uganda''\\''''s Destinations for chimp trekking.docx''); print(''\\n''.join([p.text for p in doc.paragraphs]))\")",
-      "Bash(python -c \"from docx import Document; doc = Document(''Murchison Falls National Park_ A Premier Adventure.docx''); print(''\\n''.join([p.text for p in doc.paragraphs]))\")"
+      "Bash(python -c \"from docx import Document; doc = Document(''Murchison Falls National Park_ A Premier Adventure.docx''); print(''\\n''.join([p.text for p in doc.paragraphs]))\")",
+      "Bash(dir /s /b \"D:\\SHAKES TRAVEL\\shakestravelapp\")",
+      "Bash(dir \"D:\\SHAKES TRAVEL\")",
+      "Bash(rmdir \"D:\\SHAKES TRAVEL\\shakestravelapp\\public\\destinations\")",
+      "Bash(npm run build)",
+      "Bash(cat \"D:\\SHAKES TRAVEL\\shakestravelapp\\dist\\_redirects\")",
+      "Bash(npm install react-slick slick-carousel)"
     ],
     "deny": [],
     "ask": []

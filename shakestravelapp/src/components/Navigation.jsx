@@ -64,9 +64,9 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <a href="#book" className="btn-primary">
+            <Link to="/plan-your-trip" className="btn-primary">
               Let's plan your trip
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,9 +117,9 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <a href="#book" className="block mt-3">
+            <Link to="/plan-your-trip" className="block mt-3" onClick={() => setIsOpen(false)}>
               <button className="btn-primary w-full">Let's plan your trip</button>
-            </a>
+            </Link>
           </div>
         )}
       </div>

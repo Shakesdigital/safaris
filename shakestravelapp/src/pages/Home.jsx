@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
+import DestinationCarousel from '../components/DestinationCarousel'
+import ExperienceCarousel from '../components/ExperienceCarousel'
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -16,42 +18,158 @@ export default function Home() {
       title: 'Bwindi Impenetrable Forest',
       description: 'Home to half of the world\'s mountain gorillas. Experience the breathtaking encounter with these gentle giants in their natural habitat.',
       image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
-      highlights: ['Gorilla Trekking', 'UNESCO World Heritage Site', 'Biodiversity Hotspot']
+      highlights: ['Gorilla Trekking', 'UNESCO World Heritage Site', 'Biodiversity Hotspot'],
+      link: '/destinations/bwindi-impenetrable'
     },
     {
       title: 'Queen Elizabeth National Park',
       description: 'Uganda\'s most popular safari destination with diverse ecosystems and the famous tree-climbing lions of Ishasha.',
       image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
-      highlights: ['Tree-Climbing Lions', 'Boat Safari', 'Big Game Viewing']
+      highlights: ['Tree-Climbing Lions', 'Boat Safari', 'Big Game Viewing'],
+      link: '/destinations/queen-elizabeth'
     },
     {
       title: 'Murchison Falls National Park',
       description: 'Witness the Nile River explode through a narrow gorge, creating the world\'s most powerful waterfall.',
       image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=800',
-      highlights: ['Murchison Falls', 'Nile River Safari', 'Wildlife Abundance']
+      highlights: ['Murchison Falls', 'Nile River Safari', 'Wildlife Abundance'],
+      link: '/destinations/murchison-falls'
+    },
+    {
+      title: 'Kibale National Park',
+      description: 'The primate capital of the world with 13 primate species. Track habituated chimpanzees through pristine tropical rainforest.',
+      image: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800',
+      highlights: ['Chimpanzee Tracking', 'Primate Diversity', 'Birding Paradise'],
+      link: '/destinations/kibale-national-park'
+    },
+    {
+      title: 'Kidepo Valley National Park',
+      description: 'Uganda\'s most remote and untouched wilderness. Experience authentic African savanna with minimal tourist crowds.',
+      image: 'https://images.unsplash.com/photo-1535338454770-6c4f504d5f6b?w=800',
+      highlights: ['Remote Wilderness', 'Diverse Wildlife', 'Cultural Encounters'],
+      link: '/destinations/kidepo-valley'
+    },
+    {
+      title: 'Lake Mburo National Park',
+      description: 'Uganda\'s smallest savanna park offering intimate wildlife encounters. Perfect for walking safaris and horseback riding.',
+      image: 'https://images.unsplash.com/photo-1547970810-dc1e684757a9?w=800',
+      highlights: ['Walking Safaris', 'Zebra Herds', 'Boat Cruises'],
+      link: '/destinations/lake-mburo'
+    },
+    {
+      title: 'Rwenzori Mountains',
+      description: 'The legendary Mountains of the Moon with snow-capped peaks at the equator. Africa\'s most challenging and rewarding trek.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      highlights: ['Mountain Trekking', 'Glacial Peaks', 'Alpine Flora'],
+      link: '/destinations/rwenzori-mountains'
+    },
+    {
+      title: 'Semuliki Valley',
+      description: 'Uganda\'s true birder\'s paradise with over 400 bird species. Explore hot springs and lowland tropical forest ecosystems.',
+      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800',
+      highlights: ['Hot Springs', 'Birding Heaven', 'Pygmy Culture'],
+      link: '/destinations/semuliki-valley'
+    },
+    {
+      title: 'Mount Elgon National Park',
+      description: 'An extinct volcano with the world\'s largest caldera. Discover spectacular caves, waterfalls, and unique mountain vegetation.',
+      image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
+      highlights: ['Cave Exploration', 'Waterfalls', 'Hiking Trails'],
+      link: '/destinations/mount-elgon'
     }
   ]
 
   const experiences = [
     {
+      slug: 'bwindi-gorilla-trekking',
+      title: '3 Days Safari Experience to Bwindi Impenetrable National Park',
       icon: '🦍',
-      title: 'Gorilla Trekking',
-      description: 'An unforgettable face-to-face encounter with mountain gorillas'
+      tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
+      description: 'You\'ll walk into a forest that feels like it\'s been waiting for you, where every step brings you closer to one of life\'s most moving experiences - sitting quietly while a family of mountain gorillas goes about their day around you.',
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: '$750 per person',
+      rating: '4.9',
+      reviews: 234,
+      category: 'Wildlife Safari'
     },
     {
+      slug: 'queen-elizabeth-safari',
+      title: '3 Days Safari Experience to Queen Elizabeth National Park',
       icon: '🦁',
-      title: 'Wildlife Safaris',
-      description: 'Spot lions, elephants, leopards, and countless other species'
+      tagline: 'Tree-Climbing Lions & Kazinga Channel',
+      description: 'You\'ll find yourself in Uganda\'s most welcoming safari destination, where lions have learned to climb trees in the Ishasha sector - it\'s quite something to see these big cats lounging in the branches like oversized house cats.',
+      duration: '3 Days',
+      difficulty: 'Easy',
+      price: '$450 per person',
+      rating: '4.8',
+      reviews: 189,
+      category: 'Wildlife Safari'
     },
     {
-      icon: '🎭',
-      title: 'Cultural Tours',
-      description: 'Immerse yourself in Uganda\'s rich cultural heritage'
+      slug: 'murchison-falls-safari',
+      title: '3 Days Safari Experience to Murchison Falls National Park',
+      icon: '💦',
+      tagline: 'The Mighty Nile\'s Explosive Power',
+      description: 'There\'s something almost unbelievable about watching the world\'s longest river squeeze through a narrow gap in the rocks and explode out the other side with such force it creates a permanent rainbow in the mist.',
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: '$650 per person',
+      rating: '4.8',
+      reviews: 287,
+      category: 'Wildlife Safari'
     },
     {
-      icon: '🚤',
-      title: 'Boat Safaris',
-      description: 'Cruise along pristine waterways observing hippos and crocodiles'
+      slug: 'kibale-chimp-tracking',
+      title: '3 Days Safari Experience to Kibale National Park',
+      icon: '🐵',
+      tagline: 'Primate Capital of the World',
+      description: 'You\'ll walk into Kibale Forest and suddenly realize you\'re in a place where primates rule - chimpanzees calling to each other through the canopy, monkeys swinging from branch to branch like they\'re putting on a show just for you.',
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: '$200 per person',
+      rating: '4.8',
+      reviews: 178,
+      category: 'Wildlife Safari'
+    },
+    {
+      slug: 'kidepo-valley-safari',
+      title: '3 Days Safari Experience to Kidepo Valley National Park',
+      icon: '🦒',
+      tagline: 'Uganda\'s Remote Wilderness Paradise',
+      description: 'You\'ll drive for hours through changing landscapes until suddenly you\'re in a place that feels like the Africa of storybooks - vast plains stretching out to mountains that touch the sky.',
+      duration: '3 Days',
+      difficulty: 'Moderate',
+      price: 'Contact for pricing',
+      rating: '4.8',
+      reviews: 105,
+      category: 'Wildlife Safari'
+    },
+    {
+      slug: 'lake-mburo-safari',
+      title: '3 Days Safari Experience to Lake Mburo National Park',
+      icon: '🦓',
+      tagline: 'Walking Safaris & Unique Wildlife',
+      description: 'This is the kind of place that reminds you why you came to Africa in the first place - intimate, welcoming, and full of those quiet moments that become treasured memories.',
+      duration: '3 Days',
+      difficulty: 'Easy',
+      price: '$350 per person',
+      rating: '4.6',
+      reviews: 156,
+      category: 'Wildlife Safari'
+    },
+    {
+      slug: 'rwenzori-mountains-trek',
+      title: '8 Days Trekking Experience to Rwenzori Mountains Margherita Peak',
+      icon: '⛰️',
+      tagline: 'Africa\'s Mystical Mountains of the Moon',
+      description: 'You\'ll feel like you\'ve stepped into another world when you enter these mountains - where giant lobelia plants tower over you like strange trees from a fairy tale, and moss drapes everything in soft green mystery.',
+      duration: '7-9 Days',
+      difficulty: 'Challenging',
+      price: 'Contact for pricing',
+      rating: '4.9',
+      reviews: 67,
+      category: 'Adventure & Hiking'
     }
   ]
 
@@ -72,9 +190,9 @@ export default function Home() {
             Expertly curated safari adventures that immerse you in Uganda's breathtaking wildlife, vibrant culture, and natural beauty—while leaving a greener footprint
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => handleBooking()} className="btn-primary text-lg">
+            <Link to="/plan-your-trip" className="btn-primary text-lg">
               Start Your Adventure
-            </button>
+            </Link>
             <Link to="/destinations" className="btn-secondary text-lg">
               Explore Destinations
             </Link>
@@ -130,41 +248,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredDestinations.map((destination, index) => (
-              <div key={index} className="card group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={destination.image}
-                    alt={destination.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-safari-green">
-                    {destination.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{destination.description}</p>
-                  <div className="mb-4">
-                    {destination.highlights.map((highlight, i) => (
-                      <span
-                        key={i}
-                        className="inline-block bg-safari-gold bg-opacity-20 text-safari-brown px-3 py-1 rounded-full text-sm mr-2 mb-2"
-                      >
-                        {highlight}
-                      </span>
-                    ))}
-                  </div>
-                  <button
-                    onClick={() => handleBooking(destination.title)}
-                    className="btn-secondary w-full"
-                  >
-                    Plan Your Visit
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+          <DestinationCarousel destinations={featuredDestinations} />
 
           <div className="text-center mt-12">
             <Link to="/destinations" className="btn-primary text-lg">
@@ -184,15 +268,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {experiences.map((exp, index) => (
-              <div key={index} className="card text-center p-6">
-                <div className="text-6xl mb-4">{exp.icon}</div>
-                <h3 className="text-2xl font-bold mb-3 text-safari-green">{exp.title}</h3>
-                <p className="text-gray-600">{exp.description}</p>
-              </div>
-            ))}
-          </div>
+          <ExperienceCarousel experiences={experiences} />
 
           <div className="text-center mt-12">
             <Link to="/experiences" className="btn-primary text-lg">

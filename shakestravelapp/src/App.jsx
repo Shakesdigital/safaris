@@ -7,6 +7,7 @@ import SafariExperiences from './pages/SafariExperiences'
 import ExperienceDetail from './pages/ExperienceDetail'
 import About from './pages/About'
 import PlantingGreenPaths from './pages/PlantingGreenPaths'
+import PlanYourTrip from './pages/PlanYourTrip'
 import BwindiImpenetrable from './pages/BwindiImpenetrable'
 import KibaleNationalPark from './pages/KibaleNationalPark'
 import QueenElizabeth from './pages/QueenElizabeth'
@@ -39,6 +40,7 @@ function App() {
             <Route path="/experiences/:slug" element={<ExperienceDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/planting-green-paths" element={<PlantingGreenPaths />} />
+            <Route path="/plan-your-trip" element={<PlanYourTrip />} />
           </Routes>
         </main>
         <Footer />
