@@ -281,7 +281,7 @@ export default function Home() {
       {/* Call to Action */}
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" style={{ border: '1px solid #24684f' }}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
               Ready for Your Uganda Adventure?
             </h2>

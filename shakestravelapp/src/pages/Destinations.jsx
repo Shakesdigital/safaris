@@ -192,7 +192,8 @@ export default function Destinations() {
             {destinations.map((destination, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-xl border-2 border-safari-green p-8 md:p-10"
+                className="bg-white rounded-2xl shadow-xl p-8 md:p-10"
+                style={{ border: '1px solid #24684f' }}
               >
                 <div
                   className={`flex flex-col ${
@@ -261,7 +262,7 @@ export default function Destinations() {
       {/* Call to Action */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" style={{ border: '1px solid #24684f' }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-safari-green">
               Create Your Custom Safari Itinerary
             </h2>

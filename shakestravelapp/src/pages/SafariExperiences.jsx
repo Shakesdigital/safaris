@@ -242,7 +242,7 @@ export default function SafariExperiences() {
       {/* Call to Action */}
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" style={{ border: '1px solid #24684f' }}>
             <h2 className="text-3xl md:text-4xl font-bold text-safari-green mb-6">
               Combine Multiple Experiences
             </h2>

@@ -82,42 +82,42 @@ export default function BwindiImpenetrable() {
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold text-safari-green mb-12 text-center">Key Highlights</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Mountain Gorilla Encounters</h3>
               <p className="text-gray-700">
                 25 habituated gorilla families across four sectors provide the world's most accessible mountain gorilla
                 viewing. Each family offers unique personalities and behaviors, with success rates exceeding 95%.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Munyaga Waterfalls</h3>
               <p className="text-gray-700">
                 This spectacular 33-meter cascade provides a perfect complement to gorilla trekking through a
                 manageable 3-hour forest hike from Buhoma sector.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Rushura Hill Viewpoint</h3>
               <p className="text-gray-700">
                 360-degree panoramic vistas encompass the Virunga Volcanoes, Rwenzori Mountains, and Western Rift
                 Valley. This moderate 3-hour climb offers spectacular sunrise and sunset viewing.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Mubwindi Swamp</h3>
               <p className="text-gray-700">
                 A birding paradise with over 200 species including rare Albertine Rift endemics like the African Green
                 Broadbill and Shelley's Crimson-wing.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Batwa Heritage Trail</h3>
               <p className="text-gray-700">
                 Cultural immersion experiences with the forest's original inhabitants provide insights into traditional
                 forest survival skills and spiritual connections to the ancient ecosystem.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg shadow-lg" style={{ border: '1px solid #24684f' }}>
               <h3 className="text-xl font-bold text-safari-green mb-3">Bamboo Forest Ecosystem</h3>
               <p className="text-gray-700">
                 High-altitude bamboo zones above 2,400 meters offer unique trekking experiences through specialized

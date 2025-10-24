@@ -191,7 +191,7 @@ export default function PlanYourTrip() {
       {/* Main Form Section */}
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-5xl">
-          <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-12" style={{ border: '1px solid #24684f' }}>
 
             {/* Personal Information */}
             <div className="mb-10">

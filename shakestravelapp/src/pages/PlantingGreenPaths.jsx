@@ -193,7 +193,7 @@ export default function PlantingGreenPaths() {
             <h2 className="section-title text-center mb-12">The Cause & Our Impact</h2>
 
             <div className="grid md:grid-cols-2 gap-12">
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-safari-green p-8">
+              <div className="bg-white rounded-2xl shadow-xl p-8" style={{ border: '1px solid #24684f' }}>
                 <h3 className="text-3xl font-bold text-safari-green mb-6">The Cause</h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
                   Uganda's tourism industry has experienced significant growth, bringing increased revenue and economic opportunities. However, this growth has coincided with ecosystem degeneration driven by human activities and climate change.
@@ -203,7 +203,7 @@ export default function PlantingGreenPaths() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-safari-gold p-8">
+              <div className="bg-white rounded-2xl shadow-xl p-8" style={{ border: '1px solid #24684f' }}>
                 <h3 className="text-3xl font-bold text-safari-gold mb-6">Our Impact</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -253,7 +253,8 @@ export default function PlantingGreenPaths() {
             {involvementOptions.map((option, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-xl border-2 border-safari-green p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                style={{ border: '1px solid #24684f' }}
               >
                 <div className="text-6xl mb-4 text-center">{option.icon}</div>
                 <h3 className="text-2xl font-bold text-safari-green mb-4 text-center">{option.title}</h3>
@@ -276,7 +277,7 @@ export default function PlantingGreenPaths() {
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12">
+            <div className="bg-white rounded-2xl shadow-xl p-12" style={{ border: '1px solid #24684f' }}>
               <h2 className="text-4xl font-bold text-safari-green mb-4 text-center">Stay Connected</h2>
               <p className="text-xl text-gray-700 text-center mb-8">
                 Subscribe to our newsletter for eco-travel updates, conservation stories, and exclusive offers
@@ -336,7 +337,7 @@ export default function PlantingGreenPaths() {
       {/* Final CTA Section */}
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-safari-green p-12 text-center">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" style={{ border: '1px solid #24684f' }}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
               Ready to Make a Difference?
             </h2>
