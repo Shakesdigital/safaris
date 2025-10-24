@@ -8,32 +8,32 @@ export default function HeroSlider() {
 
   const heroSlides = [
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/lions%20in%20the%20tree.jpg',
+      image: '/images/FOr website/lions in the tree.jpg',
       title: 'Tree-Climbing Lions',
       description: 'Experience the majesty of lions lounging in acacia trees—a rare and unforgettable safari moment.'
     },
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/kid%20gooorillas.jpg',
+      image: '/images/FOr website/kid gooorillas.jpg',
       title: 'Young Mountain Gorillas',
       description: 'Encounter endangered mountain gorillas in their natural habitat—a humbling and intimate wildlife experience.'
     },
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/giraffe%20two%20safari.jpg',
+      image: '/images/FOr website/giraffe two safari.jpg',
       title: 'Graceful Giraffes',
       description: 'Watch these magnificent creatures roam the African savanna with elegant, towering movements.'
     },
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/Elephant%20close%20view.jpg',
+      image: '/images/FOr website/Elephant close view.jpg',
       title: 'Majestic Elephants',
       description: 'Get up close to Africa\'s largest land animals in their natural environment—a powerful safari experience.'
     },
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/cool%20safari%20cars%20image.jpg',
+      image: '/images/FOr website/cool safari cars image.jpg',
       title: 'Safari Adventure',
       description: 'Explore the African wilderness in style with expert guides and comfortable safari vehicles.'
     },
     {
-      image: 'https://shakes-travel.netlify.app/images/FOr%20website/Gorillas%20with%20baby.jpg',
+      image: '/images/FOr website/Gorillas with baby.jpg',
       title: 'Gorilla Family Bonds',
       description: 'Witness the tender moments between mother gorillas and their young in Bwindi Impenetrable Forest.'
     }
@@ -64,6 +64,7 @@ export default function HeroSlider() {
               alt={slide.title}
               className="h-full w-full object-cover"
               style={{ position: 'absolute', top: 0, left: 0 }}
+              loading="eager"
             />
             <div className="absolute inset-0 bg-black/40"></div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 sm:p-12 z-10">
