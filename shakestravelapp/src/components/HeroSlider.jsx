@@ -8,32 +8,32 @@ export default function HeroSlider() {
 
   const heroSlides = [
     {
-      image: '/images/FOr%20website/lions%20in%20the%20tree.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/lions%20in%20the%20tree.jpg',
       title: 'Tree-Climbing Lions',
       description: 'Experience the majesty of lions lounging in acacia trees—a rare and unforgettable safari moment.'
     },
     {
-      image: '/images/FOr%20website/kid%20gooorillas.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/kid%20gooorillas.jpg',
       title: 'Young Mountain Gorillas',
       description: 'Encounter endangered mountain gorillas in their natural habitat—a humbling and intimate wildlife experience.'
     },
     {
-      image: '/images/FOr%20website/giraffe%20two%20safari.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/giraffe%20two%20safari.jpg',
       title: 'Graceful Giraffes',
       description: 'Watch these magnificent creatures roam the African savanna with elegant, towering movements.'
     },
     {
-      image: '/images/FOr%20website/Elephant%20close%20view.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/Elephant%20close%20view.jpg',
       title: 'Majestic Elephants',
       description: 'Get up close to Africa\'s largest land animals in their natural environment—a powerful safari experience.'
     },
     {
-      image: '/images/FOr%20website/cool%20safari%20cars%20image.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/cool%20safari%20cars%20image.jpg',
       title: 'Safari Adventure',
       description: 'Explore the African wilderness in style with expert guides and comfortable safari vehicles.'
     },
     {
-      image: '/images/FOr%20website/Gorillas%20with%20baby.jpg',
+      image: 'https://shakes-travel.netlify.app/images/FOr%20website/Gorillas%20with%20baby.jpg',
       title: 'Gorilla Family Bonds',
       description: 'Witness the tender moments between mother gorillas and their young in Bwindi Impenetrable Forest.'
     }
@@ -59,17 +59,17 @@ export default function HeroSlider() {
       <Slider ref={sliderRef} {...settings} className="h-full">
         {heroSlides.map((slide, index) => (
           <div key={index} className="h-screen relative">
-            <div
-              className="h-full w-full bg-cover bg-center flex items-center"
-              style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${slide.image}')`,
-              }}
-            >
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 sm:p-12">
-                <div className="container mx-auto px-4">
-                  <h3 className="text-3xl sm:text-4xl font-bold text-white mb-3">{slide.title}</h3>
-                  <p className="text-lg sm:text-xl text-gray-200 max-w-2xl">{slide.description}</p>
-                </div>
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="h-full w-full object-cover"
+              style={{ position: 'absolute', top: 0, left: 0 }}
+            />
+            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 sm:p-12 z-10">
+              <div className="container mx-auto px-4">
+                <h3 className="text-3xl sm:text-4xl font-bold text-white mb-3">{slide.title}</h3>
+                <p className="text-lg sm:text-xl text-gray-200 max-w-2xl">{slide.description}</p>
               </div>
             </div>
           </div>
