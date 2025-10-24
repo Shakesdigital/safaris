@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 import DestinationCarousel from '../components/DestinationCarousel'
 import ExperienceCarousel from '../components/ExperienceCarousel'
+import HeroSlider from '../components/HeroSlider'
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -175,30 +176,28 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="relative h-screen bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600)',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-heading">
-            Discover the Pearl of Africa
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Expertly curated safari adventures that immerse you in Uganda's breathtaking wildlife, vibrant culture, and natural beauty—while leaving a greener footprint
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/plan-your-trip" className="btn-primary text-lg">
-              Start Your Adventure
-            </Link>
-            <Link to="/destinations" className="btn-secondary text-lg">
-              Explore Destinations
-            </Link>
+      {/* Hero Section with Image Slider */}
+      <div className="relative">
+        <HeroSlider />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="container mx-auto px-4 text-center text-white z-20">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-heading drop-shadow-lg">
+              Discover the Pearl of Africa
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-lg">
+              Expertly curated safari adventures that immerse you in Uganda's breathtaking wildlife, vibrant culture, and natural beauty—while leaving a greener footprint
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pointer-events-auto">
+              <Link to="/plan-your-trip" className="btn-primary text-lg">
+                Start Your Adventure
+              </Link>
+              <Link to="/destinations" className="btn-secondary text-lg">
+                Explore Destinations
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Why Choose Shakes Travel */}
       <section className="py-20">
