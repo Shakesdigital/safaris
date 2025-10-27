@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import PlanYourTripCarousel from '../components/PlanYourTripCarousel'
 
 export default function PlanYourTrip() {
   const [formData, setFormData] = useState({
@@ -141,22 +142,20 @@ export default function PlanYourTrip() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Hero Section */}
-      <section
-        className="relative h-[60vh] bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1547970810-dc1e684757a9?w=1600)',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 font-heading">
-            Let's Plan Your Dream Safari
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Share your travel dreams with us, and we'll craft a personalized safari adventure that exceeds your expectations
-          </p>
+      {/* Hero Section with Plan Your Trip Carousel */}
+      <div className="relative" style={{ borderRadius: '0px' }}>
+        <PlanYourTripCarousel />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="container mx-auto px-4 text-center text-white z-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-heading drop-shadow-lg">
+              Let's Plan Your Dream Safari
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-lg">
+              Share your travel dreams with us, and we'll craft a personalized safari adventure that exceeds your expectations
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction Section */}
       <section className="py-12 bg-white">
