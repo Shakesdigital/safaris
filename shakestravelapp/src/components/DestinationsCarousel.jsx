@@ -60,10 +60,10 @@ export default function DestinationsCarousel() {
   }
 
   return (
-    <div className="relative h-96 md:h-[28rem] w-full overflow-hidden rounded-2xl shadow-xl">
-      <Slider ref={sliderRef} {...settings} className="h-full">
+    <div className="relative h-screen md:h-[600px] w-full overflow-hidden" style={{ borderRadius: '0px' }}>
+      <Slider ref={sliderRef} {...settings} className="h-full" style={{ borderRadius: '0px' }}>
         {destinationSlides.map((slide, index) => (
-          <div key={index} className="relative h-96 md:h-[28rem]">
+          <div key={index} className="relative h-screen md:h-[600px]" style={{ borderRadius: '0px' }}>
             <img
               src={slide.image}
               alt={slide.title}
@@ -83,6 +83,14 @@ export default function DestinationsCarousel() {
       </Slider>
 
       <style jsx>{`
+        :global(.slick-slider),
+        :global(.slick-list),
+        :global(.slick-track),
+        :global(.slick-slide),
+        :global(.slick-slide > div) {
+          border-radius: 0 !important;
+        }
+
         :global(.slick-dots) {
           bottom: 20px !important;
         }
@@ -98,6 +106,7 @@ export default function DestinationsCarousel() {
           background: rgba(255, 255, 255, 0.5) !important;
           border-radius: 50% !important;
           transition: all 0.3s ease !important;
+          border: none !important;
         }
 
         :global(.slick-dots li.slick-active button) {
@@ -116,6 +125,7 @@ export default function DestinationsCarousel() {
           top: 50% !important;
           transform: translateY(-50%) !important;
           z-index: 10 !important;
+          border: none !important;
         }
 
         :global(.slick-prev:hover),

@@ -50,10 +50,10 @@ export default function ExperiencesCarousel() {
   }
 
   return (
-    <div className="relative h-96 md:h-[28rem] w-full overflow-hidden" style={{ borderRadius: '0px' }}>
+    <div className="relative h-screen md:h-[600px] w-full overflow-hidden" style={{ borderRadius: '0px' }}>
       <Slider ref={sliderRef} {...settings} className="h-full" style={{ borderRadius: '0px' }}>
         {experienceSlides.map((slide, index) => (
-          <div key={index} className="relative h-96 md:h-[28rem]" style={{ borderRadius: '0px' }}>
+          <div key={index} className="relative h-screen md:h-[600px]" style={{ borderRadius: '0px' }}>
             <img
               src={slide.image}
               alt={slide.title}

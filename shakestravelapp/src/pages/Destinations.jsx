@@ -159,7 +159,7 @@ export default function Destinations() {
   return (
     <div>
       {/* Hero Section with Destinations Carousel */}
-      <div className="relative">
+      <div className="relative" style={{ borderRadius: '0px' }}>
         <DestinationsCarousel />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="container mx-auto px-4 text-center text-white z-20">
