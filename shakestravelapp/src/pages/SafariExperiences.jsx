@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
+import ExperiencesCarousel from '../components/ExperiencesCarousel'
 
 export default function SafariExperiences() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -114,22 +115,20 @@ export default function SafariExperiences() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="relative h-96 bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1549366021-9f761d450615?w=1600)',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 font-heading">
-            Safari Experiences
-          </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            From gorilla encounters to cultural immersions - discover the experiences that make Uganda unforgettable
-          </p>
+      {/* Hero Section with Experiences Carousel */}
+      <div className="relative" style={{ borderRadius: '0px' }}>
+        <ExperiencesCarousel />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="container mx-auto px-4 text-center text-white z-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-heading drop-shadow-lg">
+              Safari Experiences
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-lg">
+              From gorilla encounters to cultural immersions - discover the experiences that make Uganda unforgettable
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="py-16">
