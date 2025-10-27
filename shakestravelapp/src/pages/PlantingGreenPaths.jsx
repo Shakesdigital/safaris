@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import BookingModal from '../components/BookingModal'
+import PlantingGreenPathsCarousel from '../components/PlantingGreenPathsCarousel'
 
 export default function PlantingGreenPaths() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -76,28 +77,23 @@ export default function PlantingGreenPaths() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="relative h-screen bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600)',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-heading">
-            Planting Green Paths
-          </h1>
-          <p className="text-2xl md:text-3xl mb-4 max-w-4xl mx-auto font-semibold">
-            Sustainable Tourism and Travel in Uganda
-          </p>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200">
-            Join us in conserving Uganda's ecosystems, supporting local communities, and creating unforgettable eco-experiences
-          </p>
-          <button onClick={() => handleGetInvolved('General Inquiry')} className="btn-primary text-lg">
-            Get Involved Today
-          </button>
+      {/* Hero Section with Planting Green Paths Carousel */}
+      <div className="relative" style={{ borderRadius: '0px' }}>
+        <PlantingGreenPathsCarousel />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="container mx-auto px-4 text-center text-white z-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-heading drop-shadow-lg">
+              Planting Green Paths
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-lg">
+              Link your safaris with tree planting. Every booking restores forests, supports communities, and fights climate change
+            </p>
+            <button onClick={() => handleGetInvolved('General Inquiry')} className="btn-primary text-lg mt-6 pointer-events-auto">
+              Get Involved Today
+            </button>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Program Overview Section */}
       <section className="py-20">
