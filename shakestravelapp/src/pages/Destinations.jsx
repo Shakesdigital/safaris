@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
+import DestinationsCarousel from '../components/DestinationsCarousel'
 
 export default function Destinations() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -157,22 +158,20 @@ export default function Destinations() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="relative h-96 bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600)',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 font-heading">
-            Uganda Safari Destinations
-          </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Explore the Pearl of Africa's most spectacular national parks and wildlife reserves
-          </p>
+      {/* Hero Section with Destinations Carousel */}
+      <div className="relative">
+        <DestinationsCarousel />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="container mx-auto px-4 text-center text-white z-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-heading drop-shadow-lg">
+              Uganda Safari Destinations
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-lg">
+              Explore the Pearl of Africa's most spectacular national parks and wildlife reserves
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="py-16">
