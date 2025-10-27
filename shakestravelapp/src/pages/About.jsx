@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 
 export default function About() {
@@ -28,7 +29,7 @@ export default function About() {
   const values = [
     {
       title: 'Environmental Stewardship',
-      description: 'Through Planting Green Paths, we restore ecosystems and reduce tourism\'s impact—ensuring Uganda\'s natural beauty endures for future generations.',
+      description: 'Through our tree planting initiatives, we restore ecosystems and reduce tourism\'s impact—ensuring Uganda\'s natural beauty endures for future generations.',
       icon: '🌿'
     },
     {
@@ -80,7 +81,7 @@ export default function About() {
                 Shakes Travel inspires travelers to discover Uganda's breathtaking natural beauty, vibrant culture, and diverse landscapes through expertly crafted safari experiences that connect you with Uganda's natural wonders and fully immerse you in its people and culture. We believe travel should be transformative, fostering meaningful connections with the places you visit while leaving a positive impact.
               </p>
               <p>
-                At the heart of our mission is the Planting Green Paths initiative, our dedicated effort to sustainably conserve the environment across Uganda's tourist and safari destinations. Through partnerships with local conservation organizations and communities, we promote tree planting, and community environment protection initiatives to restore ecosystems, combat deforestation, and reduce tourism's environmental footprint. Every tree we plant helps preserve the biodiversity and natural beauty that make Uganda such a compelling destination.
+                At the heart of our mission is the <Link to="/planting-green-paths" className="text-safari-green font-bold hover:text-safari-gold transition">Planting Green Paths initiative</Link>—our dedicated commitment to linking safari experiences with large-scale tree planting and community empowerment. Every safari booking, tree donation, and eco-stay directly funds reforestation projects across Uganda's tourist destinations. Through strategic partnerships with local communities and conservation organizations, we're restoring Uganda's forests, expanding wildlife habitats, combating climate change, and creating sustainable livelihoods for people living in safari areas. This isn't just conservation—it's a movement that makes environmental restoration profitable and benefits everyone: travelers get unforgettable safaris, communities gain economic opportunities, and Uganda's ecosystems are restored for future generations.
               </p>
               <p>
                 Our mission is to deliver expertly curated safari adventures that immerse you in Uganda's culture, wildlife, and landscapes while promoting responsible tourism. Whether you're tracking mountain gorillas in Bwindi, exploring the source of the Nile in Jinja, hiking the Rwenzori Mountains, or embarking on scenic nature adventures, each itinerary is crafted with deep local insight to connect you with the true spirit of Uganda.

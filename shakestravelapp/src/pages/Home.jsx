@@ -218,13 +218,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="card p-8 text-center">
+            <Link to="/planting-green-paths" className="card p-8 text-center hover:shadow-2xl transition-shadow duration-300 no-underline">
               <div className="text-5xl mb-4">🌿</div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Planting Green Paths</h3>
               <p className="text-gray-600">
-                Through our environmental conservation initiative, every journey contributes to tree planting, restoring Uganda's ecosystems and reducing tourism's impact
+                Every safari you book plants trees. Restore Uganda's forests, support communities, and combat climate change while experiencing incredible wildlife encounters
               </p>
-            </div>
+            </Link>
 
             <div className="card p-8 text-center">
               <div className="text-5xl mb-4">✨</div>
