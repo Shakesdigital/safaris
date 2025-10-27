@@ -22,52 +22,52 @@ export default function PlantingGreenPaths() {
   const objectives = [
     {
       icon: '🌳',
-      title: 'Tree Planting & Reforestation',
-      description: 'Promote tree planting initiatives to increase tree cover, reduce deforestation, lower carbon emissions, and create favorable wildlife habitats across Uganda\'s tourist destinations.'
+      title: 'Large-Scale Tree Planting',
+      description: 'Plant thousands of trees across Uganda to restore forests, expand wildlife habitats, combat climate change, and ensure sustainable safari experiences for generations to come.'
+    },
+    {
+      icon: '🚙',
+      title: 'Safari-Linked Conservation',
+      description: 'Integrate tree planting directly into safari experiences so every game drive, trek, and wildlife encounter contributes measurable environmental restoration and community benefit.'
     },
     {
       icon: '🤝',
-      title: 'Community Collaboration',
-      description: 'Partner with local communities to implement conservation initiatives, preserve indigenous cultures, improve wellbeing, and create sustainable livelihoods.'
+      title: 'Community Empowerment',
+      description: 'Support local communities through tree planting employment, sustainable farming practices, and direct revenue from eco-tourism—creating economic alternatives to forest destruction.'
     },
     {
-      icon: '🦒',
-      title: 'Eco-Travel Integration',
-      description: 'Integrate sustainable practices into all safari experiences to promote conservation awareness and mobilize resources for environmental initiatives in tourist destinations.'
-    },
-    {
-      icon: '🏡',
-      title: 'Eco-Friendly Accommodations',
-      description: 'Recommend and promote eco-stays that support community development, minimize environmental impact, and enhance conservation efforts.'
+      icon: '🦁',
+      title: 'Wildlife Habitat Restoration',
+      description: 'Restore and expand critical wildlife corridors through strategic tree planting, ensuring the animals that make safaris unforgettable have thriving natural habitats.'
     }
   ]
 
   const involvementOptions = [
     {
       icon: '🌱',
-      title: 'Donate a Tree',
-      description: 'Contribute to reforestation efforts – donate a tree today and help restore Uganda\'s forests.',
+      title: 'Plant Trees Today',
+      description: 'Donate trees that will directly restore Uganda\'s forests, create wildlife habitats, and provide livelihoods for local communities planting and caring for them.',
       action: 'Tree Donation',
       color: 'bg-safari-green'
     },
     {
       icon: '🚙',
-      title: 'Book an Eco Safari',
-      description: 'Experience sustainable adventures – book an eco-safari with Shakes Travel and support conservation.',
+      title: 'Book a Safari Adventure',
+      description: 'Experience Uganda\'s wildlife while your safari directly funds tree planting projects and community conservation work in the parks you visit.',
       action: 'Eco Safari Booking',
       color: 'bg-safari-gold'
     },
     {
       icon: '🏕️',
-      title: 'Book an Eco Stay',
-      description: 'Stay green in safari destinations – choose eco-friendly lodges that benefit local communities and the environment.',
+      title: 'Stay at Eco-Lodges',
+      description: 'Choose sustainable accommodations that support tree planting campaigns and provide fair wages to local staff committed to forest restoration.',
       action: 'Eco Stay Booking',
       color: 'bg-safari-green'
     },
     {
       icon: '💚',
-      title: 'Support Community Initiatives',
-      description: 'Join or fund community-led conservation projects to protect East Africa\'s biodiversity.',
+      title: 'Support Tree Planters',
+      description: 'Sponsor community tree planters earning sustainable income while restoring forests—directly connecting your support to people protecting Uganda\'s natural beauty.',
       action: 'Community Support',
       color: 'bg-safari-gold'
     }
@@ -106,10 +106,10 @@ export default function PlantingGreenPaths() {
             <h2 className="section-title text-center mb-8">About Planting Green Paths</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Planting Green Paths is Shakes Travel's dedicated initiative to promote safari travel across Uganda that sustainably conserves the environment and enhances the well-being of local communities living in tourist destinations. We believe that tourism can be a powerful force for environmental protection and community development when approached responsibly.
+                Planting Green Paths is Shakes Travel's commitment to promoting authentic safari experiences across Uganda while protecting our environment and supporting local communities through strategic tree planting initiatives. We believe that every safari adventure can contribute directly to environmental conservation and community wellbeing by combining unforgettable wildlife encounters with measurable conservation impact.
               </p>
               <p>
-                Through strategic partnerships with governments, NGOs, conservation organizations, and travel stakeholders, we're addressing critical challenges facing Uganda's natural heritage—including environmental degradation, habitat loss, poaching, and unsustainable resource use.
+                Through every safari booking, tree donation, and eco-stay, we channel resources into reforestation projects that restore Uganda's forests, combat climate change, and create sustainable livelihoods for local communities. Our tree planting initiatives are integrated into all our safari experiences, making conservation an active part of your adventure rather than just a passive benefit.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mt-8">
@@ -118,49 +118,49 @@ export default function PlantingGreenPaths() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">✓</span>
-                      <span>Creating thriving ecosystems for wildlife and communities</span>
+                      <span>Experience authentic safaris while directly supporting reforestation efforts</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">✓</span>
-                      <span>Building sustainable livelihoods through eco-tourism</span>
+                      <span>Plant trees that restore Uganda's forests and create wildlife habitats</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">✓</span>
-                      <span>Boosting responsible tourism across Uganda</span>
+                      <span>Support local communities with sustainable livelihood opportunities</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">✓</span>
-                      <span>Preserving biodiversity and natural habitats</span>
+                      <span>Combat climate change through massive tree planting campaigns</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">✓</span>
-                      <span>Combating climate change through reforestation</span>
+                      <span>Create lasting environmental legacy from your safari adventure</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-safari-light p-6 rounded-xl">
-                  <h3 className="text-2xl font-bold text-safari-green mb-4">Challenges We Address</h3>
+                  <h3 className="text-2xl font-bold text-safari-green mb-4">Challenges We Address Through Tree Planting</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">•</span>
-                      <span>Environmental degradation in tourist areas</span>
+                      <span>Deforestation destroying wildlife habitats and safari experiences</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">•</span>
-                      <span>Wildlife habitat loss and fragmentation</span>
+                      <span>Loss of forest cover reducing animal populations and ecosystem services</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">•</span>
-                      <span>Poaching and illegal wildlife trade</span>
+                      <span>Climate change threatening wildlife and tourism sustainability</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">•</span>
-                      <span>Unsustainable resource extraction</span>
+                      <span>Limited economic opportunities for communities living near protected areas</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-safari-gold mr-2 text-xl">•</span>
-                      <span>Climate change impacts on ecosystems</span>
+                      <span>Environmental degradation reducing the beauty of safari destinations</span>
                     </li>
                   </ul>
                 </div>
@@ -196,10 +196,10 @@ export default function PlantingGreenPaths() {
               <div className="bg-white rounded-2xl shadow-xl p-8" style={{ border: '1px solid #24684f' }}>
                 <h3 className="text-3xl font-bold text-safari-green mb-6">The Cause</h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                  Uganda's tourism industry has experienced significant growth, bringing increased revenue and economic opportunities. However, this growth has coincided with ecosystem degeneration driven by human activities and climate change.
+                  Uganda's forests are disappearing at an alarming rate—taking with them the habitats that make safaris magical and the resources that sustain local communities. Deforestation driven by agricultural expansion, logging, and climate change threatens both wildlife populations and the livelihoods of people living in safari destinations.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Deforestation, habitat destruction, pollution, and unsustainable tourism practices threaten the very natural wonders that attract visitors. Without intervention, we risk losing the biodiversity, landscapes, and cultural heritage that make Uganda the Pearl of Africa.
+                  Without immediate, large-scale reforestation, Uganda's safari experiences will diminish as wildlife populations decline and ecosystems collapse. Communities have limited economic alternatives to forest exploitation. Planting Green Paths directly addresses this by linking safari tourism revenue to tree planting—making conservation profitable and creating sustainable income for communities.
                 </p>
               </div>
 
@@ -207,31 +207,31 @@ export default function PlantingGreenPaths() {
                 <h3 className="text-3xl font-bold text-safari-gold mb-6">Our Impact</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
+                    <span className="text-safari-green text-2xl mr-3">🌳</span>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-1">Planting Thousands of Trees</h4>
+                      <p className="text-gray-700">Every safari booking and tree donation plants native trees that restore forests and create thriving wildlife habitats</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-safari-green text-2xl mr-3">💼</span>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-1">Creating Community Livelihoods</h4>
+                      <p className="text-gray-700">Employing local tree planters and providing sustainable income that reduces pressure on forests</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-safari-green text-2xl mr-3">🦁</span>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-1">Restoring Wildlife Habitats</h4>
+                      <p className="text-gray-700">Expanding corridors and habitats so safari animals have thriving ecosystems to call home</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
                     <span className="text-safari-green text-2xl mr-3">🌍</span>
                     <div>
-                      <h4 className="font-bold text-gray-900 mb-1">Raising Awareness</h4>
-                      <p className="text-gray-700">Educating travelers and communities about conservation and sustainable practices</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-safari-green text-2xl mr-3">📋</span>
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">Developing Policies</h4>
-                      <p className="text-gray-700">Collaborating on sustainable tourism policies and environmental protection frameworks</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-safari-green text-2xl mr-3">💰</span>
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">Mobilizing Resources</h4>
-                      <p className="text-gray-700">Channeling tourism revenue into conservation and community development projects</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-safari-green text-2xl mr-3">🤝</span>
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">Fostering Partnerships</h4>
-                      <p className="text-gray-700">Building alliances to protect environments, wildlife, and indigenous cultures</p>
+                      <h4 className="font-bold text-gray-900 mb-1">Fighting Climate Change</h4>
+                      <p className="text-gray-700">Sequestering carbon through large-scale reforestation while supporting climate-resilient communities</p>
                     </div>
                   </div>
                 </div>
@@ -339,10 +339,10 @@ export default function PlantingGreenPaths() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" style={{ border: '1px solid #24684f' }}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-safari-green">
-              Ready to Make a Difference?
+              Ready to Plant Trees While Experiencing Incredible Safaris?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
-              Every eco-safari, tree donation, and eco-stay contributes to preserving Uganda's natural heritage for future generations. Join the Planting Green Paths movement today.
+              Every safari you book plants trees. Every tree donation restores forests and employs communities. Every eco-stay supports sustainable livelihoods. Together, we're restoring Uganda's beauty—one tree, one safari, one community at a time.
             </p>
             <button onClick={() => handleGetInvolved('General Inquiry')} className="btn-primary text-lg">
               Start Your Eco-Journey
