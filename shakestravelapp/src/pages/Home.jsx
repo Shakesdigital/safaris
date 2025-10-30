@@ -277,6 +277,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Community Stays Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="order-2 md:order-1">
+              <img
+                src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=600&q=80"
+                alt="Community-hosted safari stay"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="order-1 md:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-safari-green font-heading">
+                Stay with Locals
+              </h2>
+              <p className="text-xl text-gray-600 mb-6">
+                Experience authentic Uganda through community-hosted accommodations. Support local families, enjoy genuine hospitality, and deepen your safari adventure.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">🏡</span>
+                  <div>
+                    <h4 className="font-bold text-lg text-gray-800">Authentic Experiences</h4>
+                    <p className="text-gray-600">Sleep in homes, not hotels. Connect with Ugandan families and experience real hospitality.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">💚</span>
+                  <div>
+                    <h4 className="font-bold text-lg text-gray-800">Direct Impact</h4>
+                    <p className="text-gray-600">Your booking directly supports local communities and sustainable tourism.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">⭐</span>
+                  <div>
+                    <h4 className="font-bold text-lg text-gray-800">Verified & Safe</h4>
+                    <p className="text-gray-600">Every property is inspected and reviewed for quality and safety.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/stays" className="btn-primary text-lg">
+                  Explore Community Stays
+                </Link>
+                <button className="btn-secondary text-lg">
+                  Become a Host
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">

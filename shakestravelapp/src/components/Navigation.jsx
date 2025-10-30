@@ -10,6 +10,7 @@ export default function Navigation() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/destinations', label: 'Destinations' },
+    { path: '/stays', label: 'Stays' },
     { path: '/experiences', label: 'Safari Experiences' },
     { path: '/planting-green-paths', label: 'Planting Green Paths' },
     { path: '/about', label: 'About' },
