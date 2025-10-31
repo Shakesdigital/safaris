@@ -50,10 +50,10 @@ export default function Stays() {
         <div className="relative z-20 pt-16 pb-12 px-4">
           <div className="container mx-auto text-center max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-white animate-fadeIn">
-              Stay with Locals. Safari Deeper.
+              Find Your Perfect Safari Stay
             </h1>
             <p className="text-lg md:text-xl text-gray-100 animate-fadeIn mb-12">
-              Book authentic, community-hosted accommodations in Uganda's top safari destinations.
+              Discover quality accommodations tailored to your preferences and budget in Uganda's premier safari destinations.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Stays() {
             onClick={scrollToHostSection}
             className="text-white hover:text-safari-gold transition-colors font-semibold text-sm flex items-center justify-center gap-2 mx-auto"
           >
-            <span>Or become a host</span>
+            <span>Are you an accommodation provider?</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -83,9 +83,9 @@ export default function Stays() {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-title">Explore Safari Destinations</h2>
+            <h2 className="section-title">Accommodations by Destination</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Discover authentic stays hosted by local communities across Uganda's most stunning wildlife destinations.
+              Browse quality accommodations across Uganda's premier safari destinations, with options for every budget and preference.
             </p>
           </div>
 
@@ -145,41 +145,41 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Why Stay with Shakes Section */}
+      {/* Why Book with Shakes Section */}
       <section className="py-16 px-4 bg-safari-light">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-title">Why Stay with Shakes?</h2>
+            <h2 className="section-title">Why Book with Shakes?</h2>
             <p className="text-gray-600 text-lg">
-              Community-powered tourism that benefits everyone
+              Your trusted platform for quality accommodation bookings
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Community-Powered */}
+            {/* Wide Selection */}
             <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-5xl mb-4">🏡</div>
-              <h3 className="text-xl font-bold text-safari-green mb-3">Community-Powered</h3>
+              <div className="text-5xl mb-4">🏨</div>
+              <h3 className="text-xl font-bold text-safari-green mb-3">Wide Selection</h3>
               <p className="text-gray-600">
-                Support local families and sustainable tourism. Your stay directly benefits local communities.
+                Choose from diverse accommodation types and price ranges across all major safari destinations.
               </p>
             </div>
 
-            {/* Verified Hosts */}
+            {/* Verified Properties */}
             <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="text-5xl mb-4">✅</div>
-              <h3 className="text-xl font-bold text-safari-green mb-3">Verified Hosts</h3>
+              <h3 className="text-xl font-bold text-safari-green mb-3">Verified Properties</h3>
               <p className="text-gray-600">
-                Every property is inspected and reviewed. Stay with confidence at trusted accommodations.
+                Every property is verified and reviewed by our team. Book with confidence in quality standards.
               </p>
             </div>
 
-            {/* Best Price */}
+            {/* Transparent Pricing */}
             <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="text-5xl mb-4">💸</div>
-              <h3 className="text-xl font-bold text-safari-green mb-3">Best Price Promise</h3>
+              <div className="text-5xl mb-4">💰</div>
+              <h3 className="text-xl font-bold text-safari-green mb-3">Transparent Pricing</h3>
               <p className="text-gray-600">
-                Book direct and earn fair prices for hosts. No hidden fees, transparent pricing.
+                No hidden fees or surprises. See all costs upfront with straightforward pricing policies.
               </p>
             </div>
 
@@ -188,20 +188,20 @@ export default function Stays() {
               <div className="text-5xl mb-4">🛡️</div>
               <h3 className="text-xl font-bold text-safari-green mb-3">Secure Booking</h3>
               <p className="text-gray-600">
-                Pay safely with flexible cancellation. Your funds are protected until arrival.
+                Safe payment processing with flexible cancellation options. Your satisfaction guaranteed.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Host Spotlight Carousel */}
+      {/* Accommodation Providers Carousel */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-title">Meet Your Hosts</h2>
+            <h2 className="section-title">Featured Accommodations</h2>
             <p className="text-gray-600 text-lg">
-              Stories from local hosts transforming their communities through hospitality
+              Discover quality stays from trusted accommodation service providers across Uganda's safari regions
             </p>
           </div>
 
@@ -254,7 +254,7 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Become a Host Section */}
+      {/* List Your Accommodation Section */}
       <section ref={hostSectionRef} className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -262,7 +262,7 @@ export default function Stays() {
             <div className="hidden lg:block">
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
-                alt="Local host with guests"
+                alt="Accommodation provider hosting guests"
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -270,10 +270,10 @@ export default function Stays() {
             {/* Right: Content */}
             <div>
               <h2 className="text-4xl font-bold text-safari-green mb-4 font-heading">
-                Earn from Your Property
+                List Your Accommodation
               </h2>
               <p className="text-gray-600 text-lg mb-6">
-                Join 200+ local hosts earning fair income from their accommodations. List your property for free and get bookings from safari travelers worldwide.
+                Grow your accommodation business by listing on Uganda's leading safari travel platform. Reach thousands of travelers looking for quality stays across all price points.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -282,8 +282,8 @@ export default function Stays() {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-bold text-gray-800">Free to List</h4>
-                    <p className="text-gray-600">No upfront fees. Only commission on confirmed bookings.</p>
+                    <h4 className="font-bold text-gray-800">Easy Setup</h4>
+                    <p className="text-gray-600">Free to list. Simple process to showcase your accommodation details.</p>
                   </div>
                 </div>
 
@@ -292,8 +292,8 @@ export default function Stays() {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-bold text-gray-800">Set Your Prices</h4>
-                    <p className="text-gray-600">You control pricing and availability year-round.</p>
+                    <h4 className="font-bold text-gray-800">Full Control</h4>
+                    <p className="text-gray-600">Set your own pricing, availability, and booking terms.</p>
                   </div>
                 </div>
 
@@ -302,8 +302,8 @@ export default function Stays() {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-bold text-gray-800">Reach Global Travelers</h4>
-                    <p className="text-gray-600">Access to thousands of safari enthusiasts looking to book.</p>
+                    <h4 className="font-bold text-gray-800">Broader Reach</h4>
+                    <p className="text-gray-600">Access international travelers across various budget segments.</p>
                   </div>
                 </div>
 
@@ -312,8 +312,8 @@ export default function Stays() {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-bold text-gray-800">Dedicated Support</h4>
-                    <p className="text-gray-600">Our team handles payments, guest support, and verification.</p>
+                    <h4 className="font-bold text-gray-800">Full Support</h4>
+                    <p className="text-gray-600">Payment processing, booking management, and dedicated support included.</p>
                   </div>
                 </div>
               </div>
@@ -322,10 +322,10 @@ export default function Stays() {
                 onClick={() => setIsHostFormOpen(true)}
                 className="btn-primary text-lg px-8 py-4 mb-4 block w-full sm:w-auto"
               >
-                Start Hosting Today
+                List Your Property Today
               </button>
               <p className="text-gray-600 text-sm">
-                Interested? Check out our <a href="#" className="text-safari-gold font-semibold hover:underline">Host FAQ</a> for more details.
+                Questions? Check our <a href="#" className="text-safari-gold font-semibold hover:underline">Provider FAQ</a> for more information.
               </p>
             </div>
           </div>
@@ -337,7 +337,7 @@ export default function Stays() {
         <HostSignupForm onClose={() => setIsHostFormOpen(false)} />
       )}
 
-      {/* Social Proof Footer */}
+      {/* Statistics Footer */}
       <section className="bg-safari-green text-white py-12 px-4">
         <div className="container mx-auto text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -346,8 +346,8 @@ export default function Stays() {
               <p className="text-gray-200">Successful Bookings</p>
             </div>
             <div>
-              <p className="text-4xl font-bold font-heading mb-2">200+</p>
-              <p className="text-gray-200">Local Hosts</p>
+              <p className="text-4xl font-bold font-heading mb-2">150+</p>
+              <p className="text-gray-200">Quality Properties</p>
             </div>
             <div>
               <p className="text-4xl font-bold font-heading mb-2">4.8/5</p>
@@ -355,7 +355,7 @@ export default function Stays() {
             </div>
           </div>
           <p className="mt-8 text-gray-200">
-            Powered by local hosts · Supporting sustainable tourism in Uganda
+            Connecting travelers with quality accommodations across Uganda's safari destinations
           </p>
         </div>
       </section>
