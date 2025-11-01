@@ -2,6 +2,18 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 import AboutCarousel from '../components/AboutCarousel'
+import {
+  CompassIcon,
+  PackageIcon,
+  HeartIcon,
+  LeafIcon,
+  HandshakeIcon,
+  StarIcon,
+  TargetIcon,
+  TrophyIcon,
+  GlobeIcon,
+  CoinsIcon
+} from '../components/Icons'
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -11,19 +23,19 @@ export default function About() {
       name: 'Safari Experts',
       role: 'Local Guides & Trackers',
       description: 'Experienced professionals with deep knowledge of Uganda\'s wildlife, culture, and ecosystems—bringing each safari to life with authentic insights.',
-      icon: '🧭'
+      iconComponent: CompassIcon
     },
     {
       name: 'Planning Team',
       role: 'Itinerary Specialists',
       description: 'We craft each safari with attention to detail, ensuring seamless logistics and unforgettable experiences tailored to your interests.',
-      icon: '📋'
+      iconComponent: PackageIcon
     },
     {
       name: 'Support Team',
       role: 'Guest Services',
       description: 'Available to assist you before, during, and after your journey—ensuring your Uganda adventure exceeds expectations.',
-      icon: '💬'
+      iconComponent: HeartIcon
     }
   ]
 
@@ -31,22 +43,22 @@ export default function About() {
     {
       title: 'Environmental Stewardship',
       description: 'Through our tree planting initiatives, we restore ecosystems and reduce tourism\'s impact—ensuring Uganda\'s natural beauty endures for future generations.',
-      icon: '🌿'
+      iconComponent: LeafIcon
     },
     {
       title: 'Community Partnership',
       description: 'We work closely with local communities and conservation partners to ensure tourism benefits the people who call Uganda home.',
-      icon: '🤝'
+      iconComponent: HandshakeIcon
     },
     {
       title: 'Expert Curation',
       description: 'Every safari is thoughtfully designed with deep local knowledge to create transformative and memorable travel experiences.',
-      icon: '⭐'
+      iconComponent: StarIcon
     },
     {
       title: 'Responsible Tourism',
       description: 'We promote sustainable travel practices that protect wildlife, preserve culture, and support conservation efforts across Uganda.',
-      icon: '🎯'
+      iconComponent: TargetIcon
     }
   ]
 
@@ -95,13 +107,16 @@ export default function About() {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-12">Our Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="card p-8 text-center">
-                <div className="text-5xl mb-4">{value.icon}</div>
-                <h3 className="text-2xl font-bold text-safari-green mb-3">{value.title}</h3>
-                <p className="text-gray-700">{value.description}</p>
-              </div>
-            ))}
+            {values.map((value, index) => {
+              const IconComponent = value.iconComponent
+              return (
+                <div key={index} className="card p-8 text-center">
+                  <div className="text-5xl mb-4"><IconComponent className="w-16 h-16 mx-auto text-safari-green" /></div>
+                  <h3 className="text-2xl font-bold text-safari-green mb-3">{value.title}</h3>
+                  <p className="text-gray-700">{value.description}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -111,14 +126,17 @@ export default function About() {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-12">Meet Our Team</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="card p-8 text-center">
-                <div className="text-6xl mb-4">{member.icon}</div>
-                <h3 className="text-2xl font-bold text-safari-green mb-2">{member.name}</h3>
-                <p className="text-safari-gold font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-700">{member.description}</p>
-              </div>
-            ))}
+            {teamMembers.map((member, index) => {
+              const IconComponent = member.iconComponent
+              return (
+                <div key={index} className="card p-8 text-center">
+                  <div className="text-6xl mb-4"><IconComponent className="w-20 h-20 mx-auto text-safari-green" /></div>
+                  <h3 className="text-2xl font-bold text-safari-green mb-2">{member.name}</h3>
+                  <p className="text-safari-gold font-semibold mb-3">{member.role}</p>
+                  <p className="text-gray-700">{member.description}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -131,7 +149,9 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">🏆 Local Expertise</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <TrophyIcon className="w-8 h-8" /> Local Expertise
+              </h3>
               <p className="text-gray-200">
                 As a Ugandan-owned company, we have insider knowledge and direct relationships with parks,
                 communities, and service providers.
@@ -139,7 +159,9 @@ export default function About() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">🎨 Tailored Experiences</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <TargetIcon className="w-8 h-8" /> Tailored Experiences
+              </h3>
               <p className="text-gray-200">
                 No two safaris are the same. We customize every itinerary to match your interests, budget,
                 and travel style.
@@ -147,21 +169,27 @@ export default function About() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">🌍 Responsible Tourism</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <GlobeIcon className="w-8 h-8" /> Responsible Tourism
+              </h3>
               <p className="text-gray-200">
                 We practice and promote sustainable tourism that protects wildlife and empowers local communities.
               </p>
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">🚗 Quality Vehicles</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <StarIcon className="w-8 h-8" /> Quality Vehicles
+              </h3>
               <p className="text-gray-200">
                 Our well-maintained 4x4 safari vehicles with pop-up roofs ensure comfort and optimal game viewing.
               </p>
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">📞 24/7 Support</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <HeartIcon className="w-8 h-8" /> 24/7 Support
+              </h3>
               <p className="text-gray-200">
                 Our team is always available to assist you, ensuring a worry-free safari experience from start
                 to finish.
@@ -169,7 +197,9 @@ export default function About() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">💰 Fair Pricing</h3>
+              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <CoinsIcon className="w-8 h-8" /> Fair Pricing
+              </h3>
               <p className="text-gray-200">
                 We offer competitive rates with transparent pricing and no hidden costs. Quality safaris at fair
                 prices.

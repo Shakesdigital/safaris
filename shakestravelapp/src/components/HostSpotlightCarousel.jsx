@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { PeopleIcon, LeafIcon, StarIcon } from './Icons'
 
 export default function HostSpotlightCarousel({ hosts }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -96,18 +97,18 @@ export default function HostSpotlightCarousel({ hosts }) {
                 {/* Badges */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {host.womenLed && (
-                    <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-semibold">
-                      👩 Women-Led
+                    <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                      <PeopleIcon className="w-4 h-4" /> Women-Led
                     </span>
                   )}
                   {host.ecocertified && (
-                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                      🌿 Eco-Certified
+                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                      <LeafIcon className="w-4 h-4" /> Eco-Certified
                     </span>
                   )}
                   {host.newHost && (
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
-                      ⭐ New Host
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                      <StarIcon className="w-4 h-4" /> New Host
                     </span>
                   )}
                 </div>

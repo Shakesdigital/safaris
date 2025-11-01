@@ -2,6 +2,18 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
 import ExperiencesCarousel from '../components/ExperiencesCarousel'
+import {
+  LionIcon,
+  WaterfallIcon,
+  GiraffeIcon,
+  ZebraIcon,
+  MountainIcon,
+  GorrillaIcon,
+  ChimpIcon,
+  SunriseIcon,
+  CameraIcon,
+  HikingBootIcon
+} from '../components/Icons'
 
 export default function SafariExperiences() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -16,7 +28,7 @@ export default function SafariExperiences() {
     {
       slug: 'queen-elizabeth-safari',
       title: '3 Days Safari Experience to Queen Elizabeth National Park',
-      icon: '🦁',
+      iconComponent: LionIcon,
       tagline: 'Tree-Climbing Lions & Kazinga Channel',
       description: 'You\'ll find yourself in Uganda\'s most welcoming safari destination, where lions have learned to climb trees in the Ishasha sector - it\'s quite something to see these big cats lounging in the branches like oversized house cats. The Kazinga Channel feels like nature\'s own theater, with hippos grunting their morning greetings, elephants coming down for a drink, and more types of birds than you ever knew existed. It\'s the kind of place where every game drive and boat trip brings that genuine excitement of not knowing what you\'ll see next, but knowing it will be special.',
       image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
@@ -30,7 +42,7 @@ export default function SafariExperiences() {
     {
       slug: 'murchison-falls-safari',
       title: '3 Days Safari Experience to Murchison Falls National Park',
-      icon: '💦',
+      iconComponent: WaterfallIcon,
       tagline: 'The Mighty Nile\'s Explosive Power',
       description: 'There\'s something almost unbelievable about watching the world\'s longest river squeeze through a narrow gap in the rocks and explode out the other side with such force it creates a permanent rainbow in the mist. You\'ll feel the ground vibrate as you approach Murchison Falls, and then spend your days discovering why this place captures hearts - from boat rides where crocodiles bask on the banks like they own the place, to game drives where elephant families wander by as if you\'re just another part of their landscape. It\'s the kind of raw, natural power that makes you understand why people fall in love with Africa.',
       image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=800',
@@ -44,7 +56,7 @@ export default function SafariExperiences() {
     {
       slug: 'kidepo-valley-safari',
       title: '3 Days Safari Experience to Kidepo Valley National Park',
-      icon: '🦒',
+      iconComponent: GiraffeIcon,
       tagline: 'Uganda\'s Remote Wilderness Paradise',
       description: 'You\'ll drive for hours through changing landscapes until suddenly you\'re in a place that feels like the Africa of storybooks - vast plains stretching out to mountains that touch the sky. Here, in Uganda\'s most remote park, you might spot a cheetah scanning the horizon from a rocky outcrop, or watch ostriches striding across the grasslands like they\'ve been doing it forever. The Karamojong people welcome you with a warmth that makes you feel like you\'ve come home, sharing stories around evening fires that connect you to generations of living in harmony with this wild land.',
       image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800',
@@ -58,7 +70,7 @@ export default function SafariExperiences() {
     {
       slug: 'lake-mburo-safari',
       title: '3 Days Safari Experience to Lake Mburo National Park',
-      icon: '🦓',
+      iconComponent: ZebraIcon,
       tagline: 'Walking Safaris & Unique Wildlife',
       description: 'This is the kind of place that reminds you why you came to Africa in the first place - intimate, welcoming, and full of those quiet moments that become treasured memories. You can walk right up to zebras that graze as if you\'re not even there, take a boat ride where hippos surface nearby with their curious eyes, or even ride horses through the savanna like you\'re part of an old adventure story. It\'s smaller than other parks, which just means you get to know it better, see the personalities of the animals, and feel that genuine connection to a place that welcomes you like a friend.',
       image: 'https://images.unsplash.com/photo-1535338623859-38b734369d9d?w=800',
@@ -72,7 +84,7 @@ export default function SafariExperiences() {
     {
       slug: 'rwenzori-mountains-trek',
       title: '8 Days Trekking Experience to Rwenzori Mountains Margherita Peak',
-      icon: '⛰️',
+      iconComponent: MountainIcon,
       tagline: 'Africa\'s Mystical Mountains of the Moon',
       description: 'You\'ll feel like you\'ve stepped into another world when you enter these mountains - where giant lobelia plants tower over you like strange trees from a fairy tale, and moss drapes everything in soft green mystery. The air grows colder as you climb toward Margherita Peak, Africa\'s third-highest mountain, until you\'re walking through landscapes that don\'t seem like they belong on this continent. It\'s challenging, yes, but that moment when you stand at 5,109 meters looking out over valleys you\'ve crossed and peaks you\'ve conquered stays with you forever. These are the Mountains of the Moon, and they\'ll change how you see the world.',
       image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
@@ -86,7 +98,7 @@ export default function SafariExperiences() {
     {
       slug: 'bwindi-gorilla-trekking',
       title: '3 Days Safari Experience to Bwindi Impenetrable National Park',
-      icon: '🦍',
+      iconComponent: GorrillaIcon,
       tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
       description: 'You\'ll walk into a forest that feels like it\'s been waiting for you, where every step brings you closer to one of life\'s most moving experiences - sitting quietly while a family of mountain gorillas goes about their day around you. These are our closest relatives, looking back at you with eyes that seem to understand something profound. Bwindi isn\'t just beautiful because of its ancient trees and misty hills; it\'s special because of those moments when a young gorilla plays nearby, or a silverback watches over his family, and you realize you\'re not just visiting - you\'re being welcomed into something timeless and precious.',
       image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800',
@@ -100,7 +112,7 @@ export default function SafariExperiences() {
     {
       slug: 'kibale-chimp-tracking',
       title: '3 Days Safari Experience to Kibale National Park',
-      icon: '🐵',
+      iconComponent: ChimpIcon,
       tagline: 'Primate Capital of the World',
       description: 'You\'ll walk into Kibale Forest and suddenly realize you\'re in a place where primates rule - chimpanzees calling to each other through the canopy, monkeys swinging from branch to branch like they\'re putting on a show just for you. This is where you sit quietly and watch a chimpanzee family interact, groom each other, and play, and you understand why scientists say we\'re so closely related. The forest envelops you in its cool, green embrace, and you leave knowing you\'ve witnessed something both wonderfully wild and deeply familiar. It\'s not just about seeing chimpanzees; it\'s about feeling connected to the very beginning of what makes us human.',
       image: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800',
@@ -145,18 +157,20 @@ export default function SafariExperiences() {
       <section className="py-20 bg-safari-light">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
-            {experiences.map((experience, index) => (
-              <div key={index} className="card">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={experience.image}
-                    alt={experience.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 right-4 bg-white rounded-full p-4 text-4xl shadow-lg">
-                    {experience.icon}
+            {experiences.map((experience, index) => {
+              const IconComponent = experience.iconComponent
+              return (
+                <div key={index} className="card">
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={experience.image}
+                      alt={experience.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 right-4 bg-white rounded-full p-4 text-4xl shadow-lg">
+                      <IconComponent className="w-12 h-12 text-safari-green" />
+                    </div>
                   </div>
-                </div>
 
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-2">
@@ -200,7 +214,8 @@ export default function SafariExperiences() {
                   </Link>
                 </div>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -212,7 +227,7 @@ export default function SafariExperiences() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card text-center p-6">
-              <div className="text-5xl mb-4">🌅</div>
+              <div className="text-5xl mb-4"><SunriseIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Early Starts</h3>
               <p className="text-gray-700">
                 The animals are early risers, so you should be too! Those pre-dawn starts mean you\'ll be there when the lions are most active and the light is perfect for photos.
@@ -220,7 +235,7 @@ export default function SafariExperiences() {
             </div>
 
             <div className="card text-center p-6">
-              <div className="text-5xl mb-4">📸</div>
+              <div className="text-5xl mb-4"><CameraIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Photo Opportunities</h3>
               <p className="text-gray-700">
                 Oh, and bring extra memory cards! You'll want to capture every moment - from a gorilla's curious stare to an elephant's knowing wink.
@@ -228,7 +243,7 @@ export default function SafariExperiences() {
             </div>
 
             <div className="card text-center p-6">
-              <div className="text-5xl mb-4">🥾</div>
+              <div className="text-5xl mb-4"><HikingBootIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Physical Activity</h3>
               <p className="text-gray-700">
                 Some experiences involve trekking. Maintain a moderate fitness level and bring appropriate gear.
