@@ -16,7 +16,8 @@ import {
   LeafIcon,
   SparklesIcon,
   HomeIcon,
-  HeartIcon
+  HeartIcon,
+  StarIcon
 } from '../components/Icons'
 
 export default function Home() {
