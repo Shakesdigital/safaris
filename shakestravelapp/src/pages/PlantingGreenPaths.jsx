@@ -174,10 +174,14 @@ export default function PlantingGreenPaths() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {objectives.map((objective, index) => {
               return (
-                <div key={index} className="card p-6 text-center hover:shadow-2xl transition-shadow duration-300">
-                  <div className="text-6xl mb-4"><FontAwesomeIcon icon={objective.icon} className="w-20 h-20 mx-auto text-safari-green" /></div>
-                  <h3 className="text-xl font-bold text-safari-green mb-3">{objective.title}</h3>
-                  <p className="text-gray-700">{objective.description}</p>
+                <div key={index} className="card group flex flex-col h-full">
+                  <div className="relative h-32 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                    <div className="text-6xl"><FontAwesomeIcon icon={objective.icon} className="w-20 h-20 text-white" /></div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow text-center">
+                    <h3 className="text-xl font-bold text-safari-green mb-3">{objective.title}</h3>
+                    <p className="text-gray-700 text-sm flex-grow">{objective.description}</p>
+                  </div>
                 </div>
               )
             })}
@@ -253,20 +257,23 @@ export default function PlantingGreenPaths() {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                  style={{ border: '1px solid #24684f' }}
+                  className="card group flex flex-col h-full"
                 >
-                  <div className="text-6xl mb-4 text-center"><FontAwesomeIcon icon={option.icon} className="w-20 h-20 mx-auto text-safari-green" /></div>
-                  <h3 className="text-2xl font-bold text-safari-green mb-4 text-center">{option.title}</h3>
-                  <p className="text-gray-700 text-lg mb-6 text-center leading-relaxed">
-                    {option.description}
-                  </p>
-                  <button
-                    onClick={() => handleGetInvolved(option.action)}
-                    className={`w-full py-4 px-6 text-white font-bold rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl ${option.color} hover:opacity-90`}
-                  >
-                    {option.title}
-                  </button>
+                  <div className="relative h-40 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                    <div className="text-6xl"><FontAwesomeIcon icon={option.icon} className="w-20 h-20 text-white" /></div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow text-center">
+                    <h3 className="text-2xl font-bold text-safari-green mb-4">{option.title}</h3>
+                    <p className="text-gray-700 text-sm mb-6 leading-relaxed flex-grow">
+                      {option.description}
+                    </p>
+                    <button
+                      onClick={() => handleGetInvolved(option.action)}
+                      className={`w-full py-4 px-6 text-white font-bold rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl ${option.color} hover:opacity-90 mt-auto`}
+                    >
+                      {option.title}
+                    </button>
+                  </div>
                 </div>
               )
             })}

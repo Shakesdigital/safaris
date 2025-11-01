@@ -272,31 +272,47 @@ export default function Stays() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Trust & Verification */}
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-check" className="w-12 h-12 text-safari-green" /></div>
-              <h3 className="font-bold text-safari-green text-lg mb-2">Verified Properties</h3>
-              <p className="text-gray-600 text-sm">All accommodations are verified and inspected to ensure quality standards across all price ranges.</p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-28 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                <div className="text-4xl"><FontAwesomeIcon icon="fa-check" className="w-12 h-12 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-bold text-safari-green text-lg mb-2">Verified Properties</h3>
+                <p className="text-gray-600 text-sm flex-grow">All accommodations are verified and inspected to ensure quality standards across all price ranges.</p>
+              </div>
             </div>
 
             {/* Budget Transparency */}
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-coins" className="w-12 h-12 text-safari-green" /></div>
-              <h3 className="font-bold text-safari-green text-lg mb-2">Transparent Pricing</h3>
-              <p className="text-gray-600 text-sm">No hidden fees. See exact prices in Ugandan Shillings before booking. What you see is what you pay.</p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-28 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                <div className="text-4xl"><FontAwesomeIcon icon="fa-coins" className="w-12 h-12 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-bold text-safari-green text-lg mb-2">Transparent Pricing</h3>
+                <p className="text-gray-600 text-sm flex-grow">No hidden fees. See exact prices in Ugandan Shillings before booking. What you see is what you pay.</p>
+              </div>
             </div>
 
             {/* Local Expertise */}
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-map" className="w-12 h-12 text-safari-green" /></div>
-              <h3 className="font-bold text-safari-green text-lg mb-2">Local Expertise</h3>
-              <p className="text-gray-600 text-sm">Deep knowledge of Uganda's safari regions, wildlife areas, and best accommodation options in each destination.</p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-28 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                <div className="text-4xl"><FontAwesomeIcon icon="fa-map" className="w-12 h-12 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-bold text-safari-green text-lg mb-2">Local Expertise</h3>
+                <p className="text-gray-600 text-sm flex-grow">Deep knowledge of Uganda's safari regions, wildlife areas, and best accommodation options in each destination.</p>
+              </div>
             </div>
 
             {/* Support */}
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-handshake" className="w-12 h-12 text-safari-green" /></div>
-              <h3 className="font-bold text-safari-green text-lg mb-2">Reliable Support</h3>
-              <p className="text-gray-600 text-sm">Dedicated customer service to help you find the perfect accommodation match for your safari experience.</p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-28 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                <div className="text-4xl"><FontAwesomeIcon icon="fa-handshake" className="w-12 h-12 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-bold text-safari-green text-lg mb-2">Reliable Support</h3>
+                <p className="text-gray-600 text-sm flex-grow">Dedicated customer service to help you find the perfect accommodation match for your safari experience.</p>
+              </div>
             </div>
           </div>
         </div>

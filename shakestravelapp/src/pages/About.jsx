@@ -98,10 +98,14 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
               return (
-                <div key={index} className="card p-8 text-center">
-                  <div className="text-5xl mb-4"><FontAwesomeIcon icon={value.icon} className="w-16 h-16 mx-auto text-safari-green" /></div>
-                  <h3 className="text-2xl font-bold text-safari-green mb-3">{value.title}</h3>
-                  <p className="text-gray-700">{value.description}</p>
+                <div key={index} className="card group flex flex-col h-full">
+                  <div className="relative h-32 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                    <div className="text-6xl"><FontAwesomeIcon icon={value.icon} className="w-16 h-16 text-white" /></div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-2xl font-bold text-safari-green mb-3">{value.title}</h3>
+                    <p className="text-gray-700 text-sm flex-grow">{value.description}</p>
+                  </div>
                 </div>
               )
             })}
@@ -116,11 +120,15 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => {
               return (
-                <div key={index} className="card p-8 text-center">
-                  <div className="text-6xl mb-4"><FontAwesomeIcon icon={member.icon} className="w-20 h-20 mx-auto text-safari-green" /></div>
-                  <h3 className="text-2xl font-bold text-safari-green mb-2">{member.name}</h3>
-                  <p className="text-safari-gold font-semibold mb-3">{member.role}</p>
-                  <p className="text-gray-700">{member.description}</p>
+                <div key={index} className="card group flex flex-col h-full">
+                  <div className="relative h-40 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                    <div className="text-6xl"><FontAwesomeIcon icon={member.icon} className="w-20 h-20 text-white" /></div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow text-center">
+                    <h3 className="text-2xl font-bold text-safari-green mb-2">{member.name}</h3>
+                    <p className="text-safari-gold font-semibold mb-3 text-sm">{member.role}</p>
+                    <p className="text-gray-700 text-sm flex-grow">{member.description}</p>
+                  </div>
                 </div>
               )
             })}

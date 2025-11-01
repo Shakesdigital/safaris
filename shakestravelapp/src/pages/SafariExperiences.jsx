@@ -214,28 +214,40 @@ export default function SafariExperiences() {
           <h2 className="text-4xl font-bold text-center mb-12 text-safari-green">What to Expect on Safari</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="card text-center p-6">
-              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-sun" className="w-16 h-16 mx-auto text-safari-green" /></div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Early Starts</h3>
-              <p className="text-gray-700">
-                The animals are early risers, so you should be too! Those pre-dawn starts mean you\'ll be there when the lions are most active and the light is perfect for photos.
-              </p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-32 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                <div className="text-5xl"><FontAwesomeIcon icon="fa-sun" className="w-16 h-16 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow text-center">
+                <h3 className="text-2xl font-bold mb-3 text-safari-green">Early Starts</h3>
+                <p className="text-gray-700 text-sm flex-grow">
+                  The animals are early risers, so you should be too! Those pre-dawn starts mean you\'ll be there when the lions are most active and the light is perfect for photos.
+                </p>
+              </div>
             </div>
 
-            <div className="card text-center p-6">
-              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-camera" className="w-16 h-16 mx-auto text-safari-green" /></div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Photo Opportunities</h3>
-              <p className="text-gray-700">
-                Oh, and bring extra memory cards! You'll want to capture every moment - from a gorilla's curious stare to an elephant's knowing wink.
-              </p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-32 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                <div className="text-5xl"><FontAwesomeIcon icon="fa-camera" className="w-16 h-16 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow text-center">
+                <h3 className="text-2xl font-bold mb-3 text-safari-green">Photo Opportunities</h3>
+                <p className="text-gray-700 text-sm flex-grow">
+                  Oh, and bring extra memory cards! You'll want to capture every moment - from a gorilla's curious stare to an elephant's knowing wink.
+                </p>
+              </div>
             </div>
 
-            <div className="card text-center p-6">
-              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-person-hiking" className="w-16 h-16 mx-auto text-safari-green" /></div>
-              <h3 className="text-2xl font-bold mb-3 text-safari-green">Physical Activity</h3>
-              <p className="text-gray-700">
-                Some experiences involve trekking. Maintain a moderate fitness level and bring appropriate gear.
-              </p>
+            <div className="card group flex flex-col h-full">
+              <div className="relative h-32 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                <div className="text-5xl"><FontAwesomeIcon icon="fa-person-hiking" className="w-16 h-16 text-white" /></div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow text-center">
+                <h3 className="text-2xl font-bold mb-3 text-safari-green">Physical Activity</h3>
+                <p className="text-gray-700 text-sm flex-grow">
+                  Some experiences involve trekking. Maintain a moderate fitness level and bring appropriate gear.
+                </p>
+              </div>
             </div>
           </div>
         </div>
