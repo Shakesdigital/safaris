@@ -18,6 +18,7 @@ import LakeMburo from './pages/LakeMburo'
 import MountElgon from './pages/MountElgon'
 import RwenzoriMountains from './pages/RwenzoriMountains'
 import SemulikiValley from './pages/SemulikiValley'
+import Jinja from './pages/Jinja'
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/destinations/mount-elgon" element={<MountElgon />} />
             <Route path="/destinations/rwenzori-mountains" element={<RwenzoriMountains />} />
             <Route path="/destinations/semuliki-valley" element={<SemulikiValley />} />
+            <Route path="/destinations/jinja" element={<Jinja />} />
             <Route path="/experiences" element={<SafariExperiences />} />
             <Route path="/experiences/:slug" element={<ExperienceDetail />} />
             <Route path="/stays" element={<Stays />} />

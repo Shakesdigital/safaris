@@ -78,6 +78,13 @@ export default function Home() {
       image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
       highlights: ['Cave Exploration', 'Waterfalls', 'Hiking Trails'],
       link: '/destinations/mount-elgon'
+    },
+    {
+      title: 'Jinja',
+      description: 'The vibrant adventure capital where the Nile River begins its legendary journey. Experience white-water rafting, visit the Source of the Nile, and explore local culture and crafts.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      highlights: ['Nile Source', 'White-Water Rafting', 'Adventure Sports'],
+      link: '/destinations/jinja'
     }
   ]
 

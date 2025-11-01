@@ -22,7 +22,8 @@ export default function Destinations() {
       'Lake Mburo National Park': 'lake-mburo',
       'Mount Elgon National Park': 'mount-elgon',
       'Rwenzori Mountains National Park': 'rwenzori-mountains',
-      'Semuliki Valley National Park': 'semuliki-valley'
+      'Semuliki Valley National Park': 'semuliki-valley',
+      'Jinja': 'jinja'
     }
     return urlMap[destinationName] || destinationName.toLowerCase().replace(/\s+/g, '-')
   }
@@ -153,6 +154,20 @@ export default function Destinations() {
       ],
       bestTime: 'December to February, June to September',
       duration: '3-6 days'
+    },
+    {
+      name: 'Jinja',
+      tagline: 'The Nile\'s Source & Adventure Capital',
+      description: 'Jinja is where the mighty Nile River begins its 6,650 km journey to the Mediterranean. This vibrant town blends natural beauty with adventure tourism - from white-water rafting down the Nile\'s rapids to peaceful boat cruises to the Source of the Nile. Experience local culture, artisan crafts, and world-class adventure activities.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      highlights: [
+        'Source of the Nile (Ripon Falls)',
+        'White-water rafting on the Nile',
+        'Bungee jumping and adventure sports',
+        'Local markets and crafts'
+      ],
+      bestTime: 'Year-round, best during dry seasons (June-September, December-February)',
+      duration: '1-2 days'
     }
   ]
 
