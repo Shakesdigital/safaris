@@ -237,7 +237,7 @@ export default function Home() {
             <Link to="/planting-green-paths" className="card group flex flex-col h-full no-underline">
               <div className="relative h-64 overflow-hidden flex-shrink-0">
                 <img
-                  src="/images/FOr website/Elephant by the Nile.jpg"
+                  src="/images/FOr website/tree planting 1.jpg"
                   alt="Planting Green Paths"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -253,7 +253,7 @@ export default function Home() {
             <div className="card group flex flex-col h-full">
               <div className="relative h-64 overflow-hidden flex-shrink-0">
                 <img
-                  src="/images/FOr website/Gorillas with baby.jpg"
+                  src="/images/FOr website/Safari landcruiser.JPG"
                   alt="Curated Adventures"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
