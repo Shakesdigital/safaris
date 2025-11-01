@@ -219,7 +219,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card p-8 text-center">
-              <div className="mb-4"><img src="/images/FOr website/Local Expertise.jpg" alt="Local Expertise" className="w-48 h-48 mx-auto object-cover rounded-lg" /></div>
+              <div className="mb-6 flex justify-center"><img src="/images/FOr website/Local Expertise.jpg" alt="Local Expertise" className="w-full h-64 object-cover rounded-lg" style={{maxWidth: '300px'}} /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Local Expertise</h3>
               <p className="text-gray-600">
                 Every itinerary is crafted with deep local insight, ensuring you connect authentically with Uganda's wildlife, culture, and people
@@ -227,7 +227,7 @@ export default function Home() {
             </div>
 
             <Link to="/planting-green-paths" className="card p-8 text-center hover:shadow-2xl transition-shadow duration-300 no-underline">
-              <div className="mb-4"><img src="/images/FOr website/tree planting 1.jpg" alt="Planting Green Paths" className="w-48 h-48 mx-auto object-cover rounded-lg" /></div>
+              <div className="mb-6 flex justify-center"><img src="/images/FOr website/tree planting 1.jpg" alt="Planting Green Paths" className="w-full h-64 object-cover rounded-lg" style={{maxWidth: '300px'}} /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Planting Green Paths</h3>
               <p className="text-gray-600">
                 Every safari you book plants trees. Restore Uganda's forests, support communities, and combat climate change while experiencing incredible wildlife encounters
@@ -235,7 +235,7 @@ export default function Home() {
             </Link>
 
             <div className="card p-8 text-center">
-              <div className="mb-4"><img src="/images/FOr website/About Us.jpg" alt="Curated Adventures" className="w-48 h-48 mx-auto object-cover rounded-lg" /></div>
+              <div className="mb-6 flex justify-center"><img src="/images/FOr website/About Us.jpg" alt="Curated Adventures" className="w-full h-64 object-cover rounded-lg" style={{maxWidth: '300px'}} /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Curated Adventures</h3>
               <p className="text-gray-600">
                 From gorilla trekking in Bwindi to exploring the Nile's source in Jinja—our safaris are thoughtfully designed to match your interests and travel style
