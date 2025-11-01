@@ -54,19 +54,19 @@ export default function Stays() {
   ]
 
   const propertyTypes = [
-    { name: 'Lodges & Resorts', icon: '🏨', count: '45 properties' },
-    { name: 'Tented Camps', icon: '⛺', count: '28 properties' },
-    { name: 'Homestays', icon: '🏡', count: '32 properties' },
-    { name: 'Eco-Cabins', icon: '🌿', count: '22 properties' },
+    { name: 'Lodges & Resorts', icon: '🏨' },
+    { name: 'Tented Camps', icon: '⛺' },
+    { name: 'Homestays', icon: '🏡' },
+    { name: 'Eco-Cabins', icon: '🌿' },
   ]
 
   const safariRegions = [
-    { name: 'Bwindi & Gorillas', stays: 42 },
-    { name: 'Queen Elizabeth', stays: 38 },
-    { name: 'Kibale & Chimps', stays: 28 },
-    { name: 'Murchison Falls', stays: 35 },
-    { name: 'Kidepo Valley', stays: 18 },
-    { name: 'Lake Mburo', stays: 22 },
+    { name: 'Bwindi & Gorillas' },
+    { name: 'Queen Elizabeth' },
+    { name: 'Kibale & Chimps' },
+    { name: 'Murchison Falls' },
+    { name: 'Kidepo Valley' },
+    { name: 'Lake Mburo' },
   ]
 
   return (
@@ -166,10 +166,6 @@ export default function Stays() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-                  {/* Badge */}
-                  <div className="absolute top-4 right-4 bg-safari-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {destination.stays} stays
-                  </div>
                 </div>
 
                 {/* Content */}
@@ -218,8 +214,7 @@ export default function Stays() {
                 className="group p-5 rounded-lg border-2 border-gray-200 hover:border-safari-green hover:bg-safari-light transition-all duration-300 text-center"
               >
                 <div className="text-4xl mb-3 group-hover:scale-125 transition-transform duration-300">{type.icon}</div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1 group-hover:text-safari-green transition-colors">{type.name}</h3>
-                <p className="text-xs text-gray-500">{type.count}</p>
+                <h3 className="font-bold text-gray-900 text-sm group-hover:text-safari-green transition-colors">{type.name}</h3>
               </Link>
             ))}
           </div>
@@ -241,8 +236,7 @@ export default function Stays() {
                 to={`/stays/results`}
                 className="p-4 rounded-lg bg-white border-2 border-gray-200 hover:border-safari-green hover:shadow-md transition-all text-center group"
               >
-                <h3 className="font-semibold text-gray-900 text-sm mb-2 group-hover:text-safari-green transition-colors">{region.name}</h3>
-                <p className="text-xs text-gray-500">{region.stays} accommodations</p>
+                <h3 className="font-semibold text-gray-900 text-sm group-hover:text-safari-green transition-colors">{region.name}</h3>
               </Link>
             ))}
           </div>
@@ -301,28 +295,6 @@ export default function Stays() {
         </div>
       </section>
 
-      {/* Guest Reviews & Trust */}
-      <section className="py-12 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-5xl font-bold text-safari-green mb-2">1,200+</p>
-              <p className="text-gray-600 mb-1">Successful Safari Bookings</p>
-              <p className="text-sm text-gray-500">Travelers found their perfect stay</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-safari-green mb-2">150+</p>
-              <p className="text-gray-600 mb-1">Quality Accommodations</p>
-              <p className="text-sm text-gray-500">Across all Uganda safari regions</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-safari-green mb-2">4.8/5</p>
-              <p className="text-gray-600 mb-1">Average Guest Rating</p>
-              <p className="text-sm text-gray-500">Based on verified guest reviews</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* List Your Accommodation Section */}
       <section ref={hostSectionRef} className="py-16 px-4 bg-white">
