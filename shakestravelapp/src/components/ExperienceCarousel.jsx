@@ -84,12 +84,14 @@ export default function ExperienceCarousel({ experiences }) {
           {getVisibleExperiences().map((experience, index) => (
             <div
               key={`${experience.slug}-${index}`}
-              className="card text-center animate-fadeIn flex flex-col h-full group hover:scale-105 transition-transform duration-300"
+              className="card group animate-fadeIn flex flex-col h-full"
             >
+              <div className="relative h-40 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+                <div className="text-6xl">{experience.icon}</div>
+              </div>
               <div className="p-6 flex flex-col flex-grow">
-                <div className="text-6xl mb-4 h-16 flex items-center justify-center flex-shrink-0">{experience.icon}</div>
-                <h3 className="text-xl font-bold mb-3 text-safari-green h-16 line-clamp-2 flex items-center justify-center">{experience.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm flex-grow line-clamp-4">{experience.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-safari-green line-clamp-2">{experience.title}</h3>
+                <p className="text-gray-600 mb-4 text-sm flex-grow line-clamp-3">{experience.description}</p>
 
                 {/* Additional Info */}
                 <div className="mb-4 space-y-2 min-h-[60px] flex flex-col justify-center">
@@ -124,12 +126,14 @@ export default function ExperienceCarousel({ experiences }) {
           {getVisibleExperiences().slice(0, 2).map((experience, index) => (
             <div
               key={`${experience.slug}-${index}`}
-              className="card text-center animate-fadeIn flex flex-col h-full group hover:scale-105 transition-transform duration-300"
+              className="card group animate-fadeIn flex flex-col h-full"
             >
+              <div className="relative h-40 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-gold to-safari-green flex items-center justify-center">
+                <div className="text-6xl">{experience.icon}</div>
+              </div>
               <div className="p-6 flex flex-col flex-grow">
-                <div className="text-6xl mb-4 h-16 flex items-center justify-center flex-shrink-0">{experience.icon}</div>
-                <h3 className="text-xl font-bold mb-3 text-safari-green h-16 line-clamp-2 flex items-center justify-center">{experience.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm flex-grow line-clamp-4">{experience.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-safari-green line-clamp-2">{experience.title}</h3>
+                <p className="text-gray-600 mb-4 text-sm flex-grow line-clamp-3">{experience.description}</p>
 
                 <div className="mb-4 space-y-2 min-h-[60px] flex flex-col justify-center">
                   <div className="flex items-center justify-center text-sm text-gray-600">
@@ -160,11 +164,13 @@ export default function ExperienceCarousel({ experiences }) {
 
         {/* Mobile View - Show 1 card */}
         <div className="md:hidden">
-          <div className="card text-center flex flex-col h-full group hover:scale-105 transition-transform duration-300">
+          <div className="card group flex flex-col h-full">
+            <div className="relative h-40 overflow-hidden flex-shrink-0 bg-gradient-to-br from-safari-green to-safari-gold flex items-center justify-center">
+              <div className="text-6xl">{experiences[currentIndex].icon}</div>
+            </div>
             <div className="p-6 flex flex-col flex-grow">
-              <div className="text-6xl mb-4 h-16 flex items-center justify-center flex-shrink-0">{experiences[currentIndex].icon}</div>
-              <h3 className="text-xl font-bold mb-3 text-safari-green">{experiences[currentIndex].title}</h3>
-              <p className="text-gray-600 mb-4 text-sm flex-grow">{experiences[currentIndex].description}</p>
+              <h3 className="text-xl font-bold mb-3 text-safari-green text-center">{experiences[currentIndex].title}</h3>
+              <p className="text-gray-600 mb-4 text-sm flex-grow text-center">{experiences[currentIndex].description}</p>
 
               <div className="mb-4 space-y-2">
                 <div className="flex items-center justify-center text-sm text-gray-600">
