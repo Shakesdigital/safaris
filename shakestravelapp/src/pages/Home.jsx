@@ -228,12 +228,9 @@ export default function Home() {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-3 text-safari-green">Local Expertise</h3>
-                <p className="text-gray-600 mb-4 text-sm flex-grow">
+                <p className="text-gray-600 text-sm flex-grow">
                   Every itinerary is crafted with deep local insight, ensuring you connect authentically with Uganda's wildlife, culture, and people
                 </p>
-                <button className="btn-secondary w-full block text-center mt-auto">
-                  Learn More
-                </button>
               </div>
             </div>
 
@@ -247,12 +244,9 @@ export default function Home() {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-3 text-safari-green">Planting Green Paths</h3>
-                <p className="text-gray-600 mb-4 text-sm flex-grow">
+                <p className="text-gray-600 text-sm flex-grow">
                   Every safari you book plants trees. Restore Uganda's forests, support communities, and combat climate change while experiencing incredible wildlife encounters
                 </p>
-                <button className="btn-secondary w-full block text-center mt-auto">
-                  Learn More
-                </button>
               </div>
             </Link>
 
@@ -266,12 +260,9 @@ export default function Home() {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-3 text-safari-green">Curated Adventures</h3>
-                <p className="text-gray-600 mb-4 text-sm flex-grow">
+                <p className="text-gray-600 text-sm flex-grow">
                   From gorilla trekking in Bwindi to exploring the Nile's source in Jinja—our safaris are thoughtfully designed to match your interests and travel style
                 </p>
-                <button className="btn-secondary w-full block text-center mt-auto">
-                  Learn More
-                </button>
               </div>
             </div>
           </div>
