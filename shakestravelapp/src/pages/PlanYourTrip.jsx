@@ -1,18 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PlanYourTripCarousel from '../components/PlanYourTripCarousel'
-import {
-  PackageIcon,
-  SparklesIcon,
-  LionIcon,
-  TargetIcon,
-  TrophyIcon,
-  HeartIcon,
-  HandshakeIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-  HeartIcon as ChatIcon
-} from '../components/Icons'
+import FontAwesomeIcon from '../components/FontAwesomeIcon'
 
 export default function PlanYourTrip() {
   const [formData, setFormData] = useState({
@@ -181,17 +170,17 @@ export default function PlanYourTrip() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="text-center p-6 bg-safari-green bg-opacity-5 rounded-lg">
-              <div className="text-4xl mb-3"><PackageIcon className="w-12 h-12 mx-auto text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-box" className="w-12 h-12 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">1. Share Details</h3>
               <p className="text-sm text-gray-600">Tell us about your dream safari</p>
             </div>
             <div className="text-center p-6 bg-safari-gold bg-opacity-10 rounded-lg">
-              <div className="text-4xl mb-3"><SparklesIcon className="w-12 h-12 mx-auto text-safari-gold" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-sparkles" className="w-12 h-12 mx-auto text-safari-gold" /></div>
               <h3 className="font-bold text-lg mb-2">2. Get Custom Plan</h3>
               <p className="text-sm text-gray-600">Receive a personalized itinerary</p>
             </div>
             <div className="text-center p-6 bg-safari-green bg-opacity-5 rounded-lg">
-              <div className="text-4xl mb-3"><LionIcon className="w-12 h-12 mx-auto text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-paw" className="w-12 h-12 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">3. Begin Adventure</h3>
               <p className="text-sm text-gray-600">Experience Uganda like never before</p>
             </div>
@@ -679,25 +668,25 @@ export default function PlanYourTrip() {
 
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl mb-4"><TargetIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-bullseye" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">Tailored Itineraries</h3>
               <p className="text-sm text-gray-600">Every safari is customized to match your unique interests and preferences</p>
             </div>
 
             <div className="text-center">
-              <div className="text-5xl mb-4"><TrophyIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-trophy" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">Local Expertise</h3>
               <p className="text-sm text-gray-600">Years of experience crafting unforgettable Ugandan adventures</p>
             </div>
 
             <div className="text-center">
-              <div className="text-5xl mb-4"><HeartIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-heart" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">Sustainable Tourism</h3>
               <p className="text-sm text-gray-600">We prioritize eco-friendly practices and community support</p>
             </div>
 
             <div className="text-center">
-              <div className="text-5xl mb-4"><HandshakeIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-handshake" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="font-bold text-lg mb-2">24/7 Support</h3>
               <p className="text-sm text-gray-600">Dedicated support throughout your journey from planning to return</p>
             </div>
@@ -717,21 +706,21 @@ export default function PlanYourTrip() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="text-3xl mb-3"><PhoneIcon className="w-10 h-10 mx-auto text-safari-green" /></div>
+              <div className="text-3xl mb-3"><FontAwesomeIcon icon="fa-phone" className="w-10 h-10 mx-auto text-safari-green" /></div>
               <h3 className="font-bold mb-2">Call Us</h3>
               <p className="text-sm text-gray-600">+256 XXX XXX XXX</p>
               <p className="text-xs text-gray-500 mt-1">Mon-Sat: 8AM-8PM EAT</p>
             </div>
 
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="text-3xl mb-3"><EnvelopeIcon className="w-10 h-10 mx-auto text-safari-green" /></div>
+              <div className="text-3xl mb-3"><FontAwesomeIcon icon="fa-envelope" className="w-10 h-10 mx-auto text-safari-green" /></div>
               <h3 className="font-bold mb-2">Email Us</h3>
               <p className="text-sm text-gray-600">info@shakestravel.com</p>
               <p className="text-xs text-gray-500 mt-1">Response within 24 hours</p>
             </div>
 
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="text-3xl mb-3"><ChatIcon className="w-10 h-10 mx-auto text-safari-green" /></div>
+              <div className="text-3xl mb-3"><FontAwesomeIcon icon="fa-heart" className="w-10 h-10 mx-auto text-safari-green" /></div>
               <h3 className="font-bold mb-2">WhatsApp</h3>
               <p className="text-sm text-gray-600">+256 XXX XXX XXX</p>
               <p className="text-xs text-gray-500 mt-1">Quick responses</p>

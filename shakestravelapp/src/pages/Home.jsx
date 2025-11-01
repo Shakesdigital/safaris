@@ -4,21 +4,7 @@ import BookingModal from '../components/BookingModal'
 import DestinationCarousel from '../components/DestinationCarousel'
 import ExperienceCarousel from '../components/ExperienceCarousel'
 import HeroSlider from '../components/HeroSlider'
-import {
-  GorrillaIcon,
-  LionIcon,
-  WaterfallIcon,
-  ChimpIcon,
-  GiraffeIcon,
-  ZebraIcon,
-  MountainIcon,
-  TrophyIcon,
-  LeafIcon,
-  SparklesIcon,
-  HomeIcon,
-  HeartIcon,
-  StarIcon
-} from '../components/Icons'
+import FontAwesomeIcon from '../components/FontAwesomeIcon'
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -99,7 +85,7 @@ export default function Home() {
     {
       slug: 'bwindi-gorilla-trekking',
       title: '3 Days Safari Experience to Bwindi Impenetrable National Park',
-      iconComponent: GorrillaIcon,
+      icon: 'fa-paw',
       tagline: 'Encounter Mountain Gorillas in Ancient Rainforest',
       description: 'You\'ll walk into a forest that feels like it\'s been waiting for you, where every step brings you closer to one of life\'s most moving experiences - sitting quietly while a family of mountain gorillas goes about their day around you.',
       duration: '3 Days',
@@ -112,7 +98,7 @@ export default function Home() {
     {
       slug: 'queen-elizabeth-safari',
       title: '3 Days Safari Experience to Queen Elizabeth National Park',
-      iconComponent: LionIcon,
+      icon: 'fa-paw',
       tagline: 'Tree-Climbing Lions & Kazinga Channel',
       description: 'You\'ll find yourself in Uganda\'s most welcoming safari destination, where lions have learned to climb trees in the Ishasha sector - it\'s quite something to see these big cats lounging in the branches like oversized house cats.',
       duration: '3 Days',
@@ -125,7 +111,7 @@ export default function Home() {
     {
       slug: 'murchison-falls-safari',
       title: '3 Days Safari Experience to Murchison Falls National Park',
-      iconComponent: WaterfallIcon,
+      icon: 'fa-water',
       tagline: 'The Mighty Nile\'s Explosive Power',
       description: 'There\'s something almost unbelievable about watching the world\'s longest river squeeze through a narrow gap in the rocks and explode out the other side with such force it creates a permanent rainbow in the mist.',
       duration: '3 Days',
@@ -138,7 +124,7 @@ export default function Home() {
     {
       slug: 'kibale-chimp-tracking',
       title: '3 Days Safari Experience to Kibale National Park',
-      iconComponent: ChimpIcon,
+      icon: 'fa-paw',
       tagline: 'Primate Capital of the World',
       description: 'You\'ll walk into Kibale Forest and suddenly realize you\'re in a place where primates rule - chimpanzees calling to each other through the canopy, monkeys swinging from branch to branch like they\'re putting on a show just for you.',
       duration: '3 Days',
@@ -151,7 +137,7 @@ export default function Home() {
     {
       slug: 'kidepo-valley-safari',
       title: '3 Days Safari Experience to Kidepo Valley National Park',
-      iconComponent: GiraffeIcon,
+      icon: 'fa-paw',
       tagline: 'Uganda\'s Remote Wilderness Paradise',
       description: 'You\'ll drive for hours through changing landscapes until suddenly you\'re in a place that feels like the Africa of storybooks - vast plains stretching out to mountains that touch the sky.',
       duration: '3 Days',
@@ -164,7 +150,7 @@ export default function Home() {
     {
       slug: 'lake-mburo-safari',
       title: '3 Days Safari Experience to Lake Mburo National Park',
-      iconComponent: ZebraIcon,
+      icon: 'fa-paw',
       tagline: 'Walking Safaris & Unique Wildlife',
       description: 'This is the kind of place that reminds you why you came to Africa in the first place - intimate, welcoming, and full of those quiet moments that become treasured memories.',
       duration: '3 Days',
@@ -177,7 +163,7 @@ export default function Home() {
     {
       slug: 'rwenzori-mountains-trek',
       title: '8 Days Trekking Experience to Rwenzori Mountains Margherita Peak',
-      iconComponent: MountainIcon,
+      icon: 'fa-mountain',
       tagline: 'Africa\'s Mystical Mountains of the Moon',
       description: 'You\'ll feel like you\'ve stepped into another world when you enter these mountains - where giant lobelia plants tower over you like strange trees from a fairy tale, and moss drapes everything in soft green mystery.',
       duration: '7-9 Days',
@@ -226,7 +212,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card p-8 text-center">
-              <div className="text-5xl mb-4"><TrophyIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-trophy" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Local Expertise</h3>
               <p className="text-gray-600">
                 Every itinerary is crafted with deep local insight, ensuring you connect authentically with Uganda's wildlife, culture, and people
@@ -234,7 +220,7 @@ export default function Home() {
             </div>
 
             <Link to="/planting-green-paths" className="card p-8 text-center hover:shadow-2xl transition-shadow duration-300 no-underline">
-              <div className="text-5xl mb-4"><LeafIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-leaf" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Planting Green Paths</h3>
               <p className="text-gray-600">
                 Every safari you book plants trees. Restore Uganda's forests, support communities, and combat climate change while experiencing incredible wildlife encounters
@@ -242,7 +228,7 @@ export default function Home() {
             </Link>
 
             <div className="card p-8 text-center">
-              <div className="text-5xl mb-4"><SparklesIcon className="w-16 h-16 mx-auto text-safari-green" /></div>
+              <div className="text-5xl mb-4"><FontAwesomeIcon icon="fa-sparkles" className="w-16 h-16 mx-auto text-safari-green" /></div>
               <h3 className="text-2xl font-bold mb-3 text-safari-green">Curated Adventures</h3>
               <p className="text-gray-600">
                 From gorilla trekking in Bwindi to exploring the Nile's source in Jinja—our safaris are thoughtfully designed to match your interests and travel style
@@ -316,7 +302,7 @@ export default function Home() {
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
-                  <HomeIcon className="w-12 h-12 text-safari-green flex-shrink-0" />
+                  <FontAwesomeIcon icon="fa-house" className="w-12 h-12 text-safari-green flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-lg text-gray-800">Authentic Experiences</h4>
                     <p className="text-gray-600">Sleep in homes, not hotels. Connect with Ugandan families and experience real hospitality.</p>
@@ -324,7 +310,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <HeartIcon className="w-12 h-12 text-safari-green flex-shrink-0" />
+                  <FontAwesomeIcon icon="fa-heart" className="w-12 h-12 text-safari-green flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-lg text-gray-800">Direct Impact</h4>
                     <p className="text-gray-600">Your booking directly supports local communities and sustainable tourism.</p>
@@ -332,7 +318,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <StarIcon className="w-12 h-12 text-safari-green flex-shrink-0" />
+                  <FontAwesomeIcon icon="fa-star" className="w-12 h-12 text-safari-green flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-lg text-gray-800">Verified & Safe</h4>
                     <p className="text-gray-600">Every property is inspected and reviewed for quality and safety.</p>

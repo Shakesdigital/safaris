@@ -1,12 +1,7 @@
 import { useState } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import BookingModal from '../components/BookingModal'
-import {
-  LocationIcon,
-  TimerIcon,
-  CheckmarkIcon,
-  PackageIcon
-} from '../components/Icons'
+import FontAwesomeIcon from '../components/FontAwesomeIcon'
 
 export default function ExperienceDetail() {
   const { slug } = useParams()
@@ -682,7 +677,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-white">
               <div className="flex items-center gap-2">
-                <LocationIcon className="w-6 h-6" />
+                <FontAwesomeIcon icon="fa-location-dot" className="w-6 h-6" />
                 <span className="text-lg">{experience.location}</span>
               </div>
               <div className="flex items-center gap-2">
@@ -691,7 +686,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
                 <span className="text-lg">({experience.reviews} reviews)</span>
               </div>
               <div className="flex items-center gap-2">
-                <TimerIcon className="w-6 h-6" />
+                <FontAwesomeIcon icon="fa-hourglass-end" className="w-6 h-6" />
                 <span className="text-lg">{experience.duration}</span>
               </div>
             </div>
@@ -721,7 +716,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {experience.highlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl">
-                    <CheckmarkIcon className="w-6 h-6 text-safari-gold flex-shrink-0 mt-1" />
+                    <FontAwesomeIcon icon="fa-check" className="w-6 h-6 text-safari-gold flex-shrink-0 mt-1" />
                     <span className="text-gray-700">{highlight}</span>
                   </div>
                 ))}
@@ -755,7 +750,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-bold text-safari-green mb-4 flex items-center">
-                    <CheckmarkIcon className="w-6 h-6 mr-2" /> Included
+                    <FontAwesomeIcon icon="fa-check" className="w-6 h-6 mr-2" /> Included
                   </h3>
                   <ul className="space-y-3">
                     {experience.included.map((item, index) => (
@@ -768,7 +763,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-700 mb-4 flex items-center">
-                    <CheckmarkIcon className="w-6 h-6 mr-2 opacity-50" /> Not Included
+                    <FontAwesomeIcon icon="fa-check" className="w-6 h-6 mr-2 opacity-50" /> Not Included
                   </h3>
                   <ul className="space-y-3">
                     {experience.excluded.map((item, index) => (
@@ -788,7 +783,7 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {experience.whatToBring.map((item, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                    <PackageIcon className="w-5 h-5 text-safari-green" />
+                    <FontAwesomeIcon icon="fa-box" className="w-5 h-5 text-safari-green" />
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -812,14 +807,14 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
 
               <div className="space-y-4 mb-6 pb-6 border-b">
                 <div className="flex items-center gap-3">
-                  <TimerIcon className="w-8 h-8 text-safari-green" />
+                  <FontAwesomeIcon icon="fa-hourglass-end" className="w-8 h-8 text-safari-green" />
                   <div>
                     <p className="text-sm text-gray-600">Duration</p>
                     <p className="font-semibold text-gray-800">{experience.duration}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <PackageIcon className="w-8 h-8 text-safari-green" />
+                  <FontAwesomeIcon icon="fa-box" className="w-8 h-8 text-safari-green" />
                   <div>
                     <p className="text-sm text-gray-600">Difficulty</p>
                     <p className="font-semibold text-gray-800">{experience.difficulty}</p>
@@ -843,15 +838,15 @@ A visit to nearby Bigodi Wetland Sanctuary complements your Kibale experience wi
 
               <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
-                  <CheckmarkIcon className="w-5 h-5 text-green-600" />
+                  <FontAwesomeIcon icon="fa-check" className="w-5 h-5 text-green-600" />
                   <span>Free cancellation up to 48 hours</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckmarkIcon className="w-5 h-5 text-green-600" />
+                  <FontAwesomeIcon icon="fa-check" className="w-5 h-5 text-green-600" />
                   <span>Instant confirmation</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckmarkIcon className="w-5 h-5 text-green-600" />
+                  <FontAwesomeIcon icon="fa-check" className="w-5 h-5 text-green-600" />
                   <span>Customizable itinerary</span>
                 </div>
               </div>

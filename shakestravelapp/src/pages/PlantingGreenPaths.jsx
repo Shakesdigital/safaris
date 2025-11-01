@@ -1,21 +1,7 @@
 import { useState } from 'react'
 import BookingModal from '../components/BookingModal'
 import PlantingGreenPathsCarousel from '../components/PlantingGreenPathsCarousel'
-import {
-  TreeIcon,
-  CarIcon,
-  HandshakeIcon,
-  LionIcon,
-  LeafIcon,
-  TentIcon,
-  HeartIcon,
-  PeopleIcon,
-  EnvelopeIcon,
-  PhoneIcon,
-  CameraIcon,
-  SunriseIcon,
-  GlobeIcon
-} from '../components/Icons'
+import FontAwesomeIcon from '../components/FontAwesomeIcon'
 
 export default function PlantingGreenPaths() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -37,22 +23,22 @@ export default function PlantingGreenPaths() {
 
   const objectives = [
     {
-      iconComponent: TreeIcon,
+      icon: 'fa-tree',
       title: 'Large-Scale Tree Planting',
       description: 'Plant thousands of trees across Uganda to restore forests, expand wildlife habitats, combat climate change, and ensure sustainable safari experiences for generations to come.'
     },
     {
-      iconComponent: CarIcon,
+      icon: 'fa-car',
       title: 'Safari-Linked Conservation',
       description: 'Integrate tree planting directly into safari experiences so every game drive, trek, and wildlife encounter contributes measurable environmental restoration and community benefit.'
     },
     {
-      iconComponent: HandshakeIcon,
+      icon: 'fa-handshake',
       title: 'Community Empowerment',
       description: 'Support local communities through tree planting employment, sustainable farming practices, and direct revenue from eco-tourism—creating economic alternatives to forest destruction.'
     },
     {
-      iconComponent: LionIcon,
+      icon: 'fa-paw',
       title: 'Wildlife Habitat Restoration',
       description: 'Restore and expand critical wildlife corridors through strategic tree planting, ensuring the animals that make safaris unforgettable have thriving natural habitats.'
     }
@@ -60,28 +46,28 @@ export default function PlantingGreenPaths() {
 
   const involvementOptions = [
     {
-      iconComponent: LeafIcon,
+      icon: 'fa-leaf',
       title: 'Plant Trees Today',
       description: 'Donate trees that will directly restore Uganda\'s forests, create wildlife habitats, and provide livelihoods for local communities planting and caring for them.',
       action: 'Tree Donation',
       color: 'bg-safari-green'
     },
     {
-      iconComponent: CarIcon,
+      icon: 'fa-car',
       title: 'Book a Safari Adventure',
       description: 'Experience Uganda\'s wildlife while your safari directly funds tree planting projects and community conservation work in the parks you visit.',
       action: 'Eco Safari Booking',
       color: 'bg-safari-gold'
     },
     {
-      iconComponent: TentIcon,
+      icon: 'fa-campground',
       title: 'Stay at Eco-Lodges',
       description: 'Choose sustainable accommodations that support tree planting campaigns and provide fair wages to local staff committed to forest restoration.',
       action: 'Eco Stay Booking',
       color: 'bg-safari-green'
     },
     {
-      iconComponent: HeartIcon,
+      icon: 'fa-heart',
       title: 'Support Tree Planters',
       description: 'Sponsor community tree planters earning sustainable income while restoring forests—directly connecting your support to people protecting Uganda\'s natural beauty.',
       action: 'Community Support',
@@ -187,10 +173,9 @@ export default function PlantingGreenPaths() {
           <h2 className="section-title text-center mb-12">Our Objectives</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {objectives.map((objective, index) => {
-              const IconComponent = objective.iconComponent
               return (
                 <div key={index} className="card p-6 text-center hover:shadow-2xl transition-shadow duration-300">
-                  <div className="text-6xl mb-4"><IconComponent className="w-20 h-20 mx-auto text-safari-green" /></div>
+                  <div className="text-6xl mb-4"><FontAwesomeIcon icon={objective.icon} className="w-20 h-20 mx-auto text-safari-green" /></div>
                   <h3 className="text-xl font-bold text-safari-green mb-3">{objective.title}</h3>
                   <p className="text-gray-700">{objective.description}</p>
                 </div>
@@ -221,28 +206,28 @@ export default function PlantingGreenPaths() {
                 <h3 className="text-3xl font-bold text-safari-gold mb-6">Our Impact</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <TreeIcon className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
+                    <FontAwesomeIcon icon="fa-tree" className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Planting Thousands of Trees</h4>
                       <p className="text-gray-700">Every safari booking and tree donation plants native trees that restore forests and create thriving wildlife habitats</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <PeopleIcon className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
+                    <FontAwesomeIcon icon="fa-people-group" className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Creating Community Livelihoods</h4>
                       <p className="text-gray-700">Employing local tree planters and providing sustainable income that reduces pressure on forests</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <LionIcon className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
+                    <FontAwesomeIcon icon="fa-paw" className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Restoring Wildlife Habitats</h4>
                       <p className="text-gray-700">Expanding corridors and habitats so safari animals have thriving ecosystems to call home</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <GlobeIcon className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
+                    <FontAwesomeIcon icon="fa-globe" className="w-8 h-8 text-safari-green mr-3 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Fighting Climate Change</h4>
                       <p className="text-gray-700">Sequestering carbon through large-scale reforestation while supporting climate-resilient communities</p>
@@ -265,14 +250,13 @@ export default function PlantingGreenPaths() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {involvementOptions.map((option, index) => {
-              const IconComponent = option.iconComponent
               return (
                 <div
                   key={index}
                   className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105"
                   style={{ border: '1px solid #24684f' }}
                 >
-                  <div className="text-6xl mb-4 text-center"><IconComponent className="w-20 h-20 mx-auto text-safari-green" /></div>
+                  <div className="text-6xl mb-4 text-center"><FontAwesomeIcon icon={option.icon} className="w-20 h-20 mx-auto text-safari-green" /></div>
                   <h3 className="text-2xl font-bold text-safari-green mb-4 text-center">{option.title}</h3>
                   <p className="text-gray-700 text-lg mb-6 text-center leading-relaxed">
                     {option.description}
@@ -325,11 +309,11 @@ export default function PlantingGreenPaths() {
                   <p className="text-gray-700 mb-4">Have questions about Planting Green Paths or want to collaborate?</p>
                   <div className="space-y-2 text-gray-700">
                     <p className="flex items-center">
-                      <EnvelopeIcon className="w-6 h-6 text-safari-gold mr-2" />
+                      <FontAwesomeIcon icon="fa-envelope" className="w-6 h-6 text-safari-gold mr-2" />
                       info@shakestravel.com
                     </p>
                     <p className="flex items-center">
-                      <PhoneIcon className="w-6 h-6 text-safari-gold mr-2" />
+                      <FontAwesomeIcon icon="fa-phone" className="w-6 h-6 text-safari-gold mr-2" />
                       +256 XXX XXX XXX
                     </p>
                   </div>
@@ -339,10 +323,10 @@ export default function PlantingGreenPaths() {
                   <h3 className="text-2xl font-bold text-safari-green mb-4">Follow Our Journey</h3>
                   <p className="text-gray-700 mb-4">Stay updated on our conservation efforts and success stories</p>
                   <div className="flex gap-4">
-                    <a href="#" className="text-4xl hover:text-safari-gold transition"><PeopleIcon className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
-                    <a href="#" className="text-4xl hover:text-safari-gold transition"><CameraIcon className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
-                    <a href="#" className="text-4xl hover:text-safari-gold transition"><SunriseIcon className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
-                    <a href="#" className="text-4xl hover:text-safari-gold transition"><PeopleIcon className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
+                    <a href="#" className="text-4xl hover:text-safari-gold transition"><FontAwesomeIcon icon="fa-people-group" className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
+                    <a href="#" className="text-4xl hover:text-safari-gold transition"><FontAwesomeIcon icon="fa-camera" className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
+                    <a href="#" className="text-4xl hover:text-safari-gold transition"><FontAwesomeIcon icon="fa-sun" className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
+                    <a href="#" className="text-4xl hover:text-safari-gold transition"><FontAwesomeIcon icon="fa-people-group" className="w-10 h-10 text-safari-green hover:text-safari-gold" /></a>
                   </div>
                 </div>
               </div>

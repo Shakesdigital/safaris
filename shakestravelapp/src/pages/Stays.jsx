@@ -6,18 +6,7 @@ import HostSpotlightCarousel from '../components/HostSpotlightCarousel'
 import HostSignupForm from '../components/HostSignupForm'
 import BookingModal from '../components/BookingModal'
 import { getFeaturedDestinations, getHostSpotlights } from '../utils/staysData'
-import {
-  CoinsIcon,
-  StarIcon,
-  CrownIcon,
-  HotelIcon,
-  TentIcon,
-  HomeIcon,
-  LeafIcon,
-  CheckmarkIcon,
-  MapIcon,
-  HandshakeIcon
-} from '../components/Icons'
+import FontAwesomeIcon from '../components/FontAwesomeIcon'
 
 export default function Stays() {
   const [isHostFormOpen, setIsHostFormOpen] = useState(false)
@@ -47,29 +36,29 @@ export default function Stays() {
   const budgetTiers = [
     {
       name: 'Budget-Friendly',
-      iconComponent: CoinsIcon,
+      icon: 'fa-coins',
       description: 'Comfortable stays under UGX 150,000/night',
       priceRange: 'UGX 50,000 - 150,000'
     },
     {
       name: 'Mid-Range',
-      iconComponent: StarIcon,
+      icon: 'fa-star',
       description: 'Quality lodges and comfortable accommodations',
       priceRange: 'UGX 150,000 - 350,000'
     },
     {
       name: 'Premium',
-      iconComponent: CrownIcon,
+      icon: 'fa-crown',
       description: 'Luxury safari experiences and eco-resorts',
       priceRange: 'UGX 350,000+'
     },
   ]
 
   const propertyTypes = [
-    { name: 'Lodges & Resorts', iconComponent: HotelIcon },
-    { name: 'Tented Camps', iconComponent: TentIcon },
-    { name: 'Homestays', iconComponent: HomeIcon },
-    { name: 'Eco-Cabins', iconComponent: LeafIcon },
+    { name: 'Lodges & Resorts', icon: 'fa-building' },
+    { name: 'Tented Camps', icon: 'fa-campground' },
+    { name: 'Homestays', icon: 'fa-house' },
+    { name: 'Eco-Cabins', icon: 'fa-leaf' },
   ]
 
   const safariRegions = [
@@ -135,7 +124,6 @@ export default function Stays() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {budgetTiers.map((tier, idx) => {
-              const IconComponent = tier.iconComponent
               return (
                 <Link
                   key={idx}
@@ -145,7 +133,7 @@ export default function Stays() {
                   <div className="absolute top-0 right-0 w-20 h-20 bg-safari-green/5 rounded-bl-3xl group-hover:bg-safari-green/10 transition-colors"></div>
 
                   <div className="relative z-10">
-                    <div className="text-5xl mb-4"><IconComponent className="w-16 h-16 text-safari-green" /></div>
+                    <div className="text-5xl mb-4"><FontAwesomeIcon icon={tier.icon} className="w-16 h-16 text-safari-green" /></div>
                     <h3 className="text-xl font-bold text-safari-green mb-2 group-hover:text-safari-green/80 transition-colors">{tier.name}</h3>
                     <p className="text-gray-600 text-sm mb-4">{tier.description}</p>
                     <p className="text-safari-green font-semibold text-sm">{tier.priceRange}</p>
@@ -223,7 +211,6 @@ export default function Stays() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {propertyTypes.map((type) => {
-              const IconComponent = type.iconComponent
               return (
                 <Link
                   key={type.name}
@@ -231,7 +218,7 @@ export default function Stays() {
                   className="group p-5 rounded-lg border-2 border-gray-200 hover:border-safari-green hover:bg-safari-light transition-all duration-300 text-center"
                 >
                   <div className="text-4xl mb-3 group-hover:scale-125 transition-transform duration-300">
-                    <IconComponent className="w-12 h-12 mx-auto text-safari-green" />
+                    <FontAwesomeIcon icon={type.icon} className="w-12 h-12 mx-auto text-safari-green" />
                   </div>
                   <h3 className="font-bold text-gray-900 text-sm group-hover:text-safari-green transition-colors">{type.name}</h3>
                 </Link>
@@ -286,28 +273,28 @@ export default function Stays() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Trust & Verification */}
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><CheckmarkIcon className="w-12 h-12 text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-check" className="w-12 h-12 text-safari-green" /></div>
               <h3 className="font-bold text-safari-green text-lg mb-2">Verified Properties</h3>
               <p className="text-gray-600 text-sm">All accommodations are verified and inspected to ensure quality standards across all price ranges.</p>
             </div>
 
             {/* Budget Transparency */}
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><CoinsIcon className="w-12 h-12 text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-coins" className="w-12 h-12 text-safari-green" /></div>
               <h3 className="font-bold text-safari-green text-lg mb-2">Transparent Pricing</h3>
               <p className="text-gray-600 text-sm">No hidden fees. See exact prices in Ugandan Shillings before booking. What you see is what you pay.</p>
             </div>
 
             {/* Local Expertise */}
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><MapIcon className="w-12 h-12 text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-map" className="w-12 h-12 text-safari-green" /></div>
               <h3 className="font-bold text-safari-green text-lg mb-2">Local Expertise</h3>
               <p className="text-gray-600 text-sm">Deep knowledge of Uganda's safari regions, wildlife areas, and best accommodation options in each destination.</p>
             </div>
 
             {/* Support */}
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-3"><HandshakeIcon className="w-12 h-12 text-safari-green" /></div>
+              <div className="text-4xl mb-3"><FontAwesomeIcon icon="fa-handshake" className="w-12 h-12 text-safari-green" /></div>
               <h3 className="font-bold text-safari-green text-lg mb-2">Reliable Support</h3>
               <p className="text-gray-600 text-sm">Dedicated customer service to help you find the perfect accommodation match for your safari experience.</p>
             </div>
